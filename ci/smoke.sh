@@ -13,7 +13,7 @@ cp $(ls build/libs/ak-smp-*.jar | grep -v sources) srv/mods/
 ls -la srv/mods
 cd srv
 echo "eula=true" > eula.txt
-printf "online-mode=false\nlevel-seed=20261113\nspawn-protection=0\n" > server.properties
+printf "online-mode=false\nlevel-seed=20261113\nspawn-protection=0\npause-when-empty-seconds=-1\n" > server.properties
 mkfifo cmd
 exec 3<>cmd
 java -Xmx3G -jar server.jar nogui <&3 > ../server.log 2>&1 &
@@ -25,8 +25,13 @@ say "datapack list enabled"
 say "scoreboard objectives list"
 say "scoreboard players list #built"
 say "forceload add 0 0"
+say "scoreboard players get #ld ak.cfg"
 say "function aksmp:load"
 sleep 5
+say "scoreboard players get #ld ak.cfg"
+say "function aksmp:ui/panel_setup"
+say "function aksmp:build/start"
+sleep 3
 say "scoreboard players get #built ak.cfg"
 say "scoreboard players get #dt ak.cfg"
 for i in $(seq 1 60); do
