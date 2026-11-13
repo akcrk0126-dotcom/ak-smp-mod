@@ -22,6 +22,13 @@ say() { echo "$1" >&3; echo ">> $1"; }
 for i in $(seq 1 120); do grep -q 'Done (' ../server.log && break; kill -0 $PID 2>/dev/null || break; sleep 5; done
 grep -q 'Done (' ../server.log || { echo "SERVER DID NOT START"; tail -150 ../server.log; exit 1; }
 say "datapack list enabled"
+say "scoreboard objectives list"
+say "scoreboard players list #built"
+say "forceload add 0 0"
+say "function aksmp:load"
+sleep 5
+say "scoreboard players get #built ak.cfg"
+say "scoreboard players get #dt ak.cfg"
 for i in $(seq 1 60); do
   say "scoreboard players get #built ak.cfg"; sleep 10
   grep -q '#built has 1 ' ../server.log && break
@@ -37,7 +44,7 @@ for i in $(seq 1 60); do kill -0 $PID 2>/dev/null || break; sleep 2; done
 kill $PID 2>/dev/null
 cd ..
 echo "================ relevant log lines ================"
-grep -n -i -E 'aksmp|error|exception|failed|couldn|unknown|#built|ORE_OK|SMOKE_END|datapack|Done \(' server.log | grep -v -i 'Failed to send' | head -300
+grep -v -E '^Unpacking|^\s+at |^\s+\.\.\. [0-9]+ more|^\s+[|\\]--|^\s+- ' server.log | cut -c1-600 | grep -v 'Can.t get value of ak.cfg for #built' | head -400
 FAIL=0
 grep -q -E 'Failed to load function|Couldn.t load|Unknown function|Exception' server.log && { echo "::error::load errors in server.log"; FAIL=1; }
 grep -q '#built has 1 ' server.log || { echo "::error::hub was not built"; FAIL=1; }
