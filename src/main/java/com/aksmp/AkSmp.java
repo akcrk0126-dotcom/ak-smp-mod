@@ -29,7 +29,6 @@ import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -231,7 +230,7 @@ public class AkSmp implements ModInitializer {
 		ToolMaterial argonite = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3000, 12.0F, 5.0F, 15, REPAIRS_ARGONITE);
 		item("argonite_sword", Item::new, tagged(new Item.Properties().sword(argonite, 4.0F, -2.4F).rarity(Rarity.RARE).fireResistant(), "argonite_sword", null));
 		item("argonite_pickaxe", Item::new, tagged(new Item.Properties().pickaxe(argonite, 1.0F, -2.8F).rarity(Rarity.RARE).fireResistant(), "argonite_pickaxe", null));
-		item("argonite_axe", p -> new AxeItem(argonite, 5.0F, -3.0F, p), tagged(new Item.Properties().rarity(Rarity.RARE).fireResistant(), "argonite_axe", null));
+		item("argonite_axe", Item::new, tagged(new Item.Properties().axe(argonite, 5.0F, -3.0F).rarity(Rarity.RARE).fireResistant(), "argonite_axe", null));
 		item("raw_argonite", Item::new, tagged(new Item.Properties().rarity(Rarity.RARE), "raw_argonite", null));
 		item("argonite_ingot", Item::new, tagged(new Item.Properties().rarity(Rarity.RARE).fireResistant().component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true), "argonite_ingot", null));
 		item("gacha_ticket", Item::new, tagged(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true), "ticket", null));
