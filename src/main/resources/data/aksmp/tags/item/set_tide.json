@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:tide_helmet",
+  "aksmp:tide_chestplate",
+  "aksmp:tide_leggings",
+  "aksmp:tide_boots"
+ ]
+}

@@ -1,0 +1,11 @@
+execute if score @s ak.slot matches 1 run return run function aksmp:ui/slot_1
+execute if score @s ak.slot matches 2 run return run function aksmp:ui/slot_2
+execute if score @s ak.slot matches 3 run return run function aksmp:ui/slot_3
+execute if score @s ak.slot matches 4 run return run function aksmp:ui/slot_4
+execute if score @s ak.slot matches 5 run return run function aksmp:ui/slot_5
+execute if score @s ak.slot matches 6 run return run function aksmp:ui/slot_6
+execute if score @s ak.slot matches 7 run return run function aksmp:ui/slot_7
+execute if score @s ak.slot matches 8 run return run function aksmp:ui/slot_8
+execute if score @s ak.slot matches 9 run return run function aksmp:ui/slot_9
+execute if score @s ak.slot matches 10 run return run function aksmp:ui/slot_10
+execute if score @s ak.slot matches 11 run return run function aksmp:ui/slot_11

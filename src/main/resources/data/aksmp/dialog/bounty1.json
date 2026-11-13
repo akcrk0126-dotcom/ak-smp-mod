@@ -1,0 +1,38 @@
+{
+ "type": "minecraft:multi_action",
+ "title": {
+  "text": "현상금 (1/2)",
+  "color": "gold",
+  "bold": true
+ },
+ "columns": 1,
+ "actions": [
+  {
+   "label": "확인",
+   "width": 150,
+   "action": {
+    "type": "minecraft:dynamic/run_command",
+    "template": "trigger bto set $(v)"
+   }
+  }
+ ],
+ "exit_action": {
+  "label": "닫기",
+  "width": 150
+ },
+ "can_close_with_escape": true,
+ "after_action": "close",
+ "body": {
+  "type": "minecraft:plain_message",
+  "contents": "현상금을 걸 대상의 ID를 입력하세요."
+ },
+ "inputs": [
+  {
+   "type": "minecraft:text",
+   "key": "v",
+   "label": "대상 ID",
+   "initial": "1",
+   "max_length": 9
+  }
+ ]
+}

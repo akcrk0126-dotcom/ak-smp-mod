@@ -1,0 +1,9 @@
+{
+ "type": "minecraft:smithing_transform",
+ "template": "minecraft:tide_armor_trim_smithing_template",
+ "base": "minecraft:diamond_leggings",
+ "addition": "minecraft:nautilus_shell",
+ "result": {
+  "id": "aksmp:tide_leggings"
+ }
+}

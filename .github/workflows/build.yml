@@ -1,0 +1,38 @@
+name: build
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'microsoft'
+      - name: build mod
+        run: chmod +x ./gradlew && ./gradlew build --stacktrace
+      - name: server test (real Fabric 26.3 server + this mod)
+        run: bash ci/smoke.sh
+      - name: upload
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: ak-smp
+          path: |
+            build/libs/
+            server.log
+      - name: release
+        if: github.ref == 'refs/heads/main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: AK SMP mod (latest)
+          prerelease: false
+          make_latest: true
+          files: |
+            build/libs/ak-smp-*[0-9].jar
+            fabric-api.jar

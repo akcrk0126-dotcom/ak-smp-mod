@@ -1,0 +1,1 @@
+tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"잔액: ","color":"white"},{"score":{"name":"@s","objective":"ak.money"},"color":"yellow"},{"text":" 코인","color":"white"}]

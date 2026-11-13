@@ -1,0 +1,20 @@
+{
+ "layers": {
+  "humanoid": [
+   {
+    "texture": "aksmp:god"
+   }
+  ],
+  "humanoid_leggings": [
+   {
+    "texture": "aksmp:god"
+   }
+  ],
+  "wings": [
+   {
+    "texture": "aksmp:god",
+    "use_player_texture": false
+   }
+  ]
+ }
+}

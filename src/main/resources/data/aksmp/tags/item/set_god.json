@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:god_helmet",
+  "aksmp:god_chestplate",
+  "aksmp:god_leggings",
+  "aksmp:god_boots"
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "layers": {
+  "humanoid": [
+   {
+    "texture": "aksmp:argonite"
+   }
+  ],
+  "humanoid_leggings": [
+   {
+    "texture": "aksmp:argonite"
+   }
+  ]
+ }
+}

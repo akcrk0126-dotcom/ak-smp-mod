@@ -1,0 +1,14 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "key": {
+  "#": "aksmp:argonite_ingot"
+ },
+ "pattern": [
+  "###",
+  "###",
+  "###"
+ ],
+ "result": {
+  "id": "aksmp:argonite_block"
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "type": "minecraft:smithing_transform",
+ "template": "minecraft:bolt_armor_trim_smithing_template",
+ "base": "minecraft:diamond_leggings",
+ "addition": "minecraft:breeze_rod",
+ "result": {
+  "id": "aksmp:storm_leggings"
+ }
+}

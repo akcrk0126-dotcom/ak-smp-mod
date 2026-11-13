@@ -1,0 +1,64 @@
+scoreboard players set #sum ak.tmp 0
+scoreboard players set #n ak.tmp 0
+execute if items entity @s weapon.mainhand minecraft:coal[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:coal",price:4}
+execute if items entity @s weapon.mainhand minecraft:raw_iron[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:raw_iron",price:10}
+execute if items entity @s weapon.mainhand minecraft:iron_ingot[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:iron_ingot",price:12}
+execute if items entity @s weapon.mainhand minecraft:raw_copper[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:raw_copper",price:3}
+execute if items entity @s weapon.mainhand minecraft:copper_ingot[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:copper_ingot",price:4}
+execute if items entity @s weapon.mainhand minecraft:raw_gold[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:raw_gold",price:14}
+execute if items entity @s weapon.mainhand minecraft:gold_ingot[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:gold_ingot",price:16}
+execute if items entity @s weapon.mainhand minecraft:redstone[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:redstone",price:3}
+execute if items entity @s weapon.mainhand minecraft:lapis_lazuli[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:lapis_lazuli",price:4}
+execute if items entity @s weapon.mainhand minecraft:quartz[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:quartz",price:5}
+execute if items entity @s weapon.mainhand minecraft:diamond[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:diamond",price:100}
+execute if items entity @s weapon.mainhand minecraft:emerald[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:emerald",price:60}
+execute if items entity @s weapon.mainhand minecraft:netherite_scrap[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:netherite_scrap",price:300}
+execute if items entity @s weapon.mainhand minecraft:netherite_ingot[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:netherite_ingot",price:1500}
+execute if items entity @s weapon.mainhand minecraft:amethyst_shard[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:amethyst_shard",price:5}
+execute if items entity @s weapon.mainhand minecraft:wheat[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:wheat",price:3}
+execute if items entity @s weapon.mainhand minecraft:carrot[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:carrot",price:2}
+execute if items entity @s weapon.mainhand minecraft:potato[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:potato",price:2}
+execute if items entity @s weapon.mainhand minecraft:beetroot[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:beetroot",price:2}
+execute if items entity @s weapon.mainhand minecraft:melon_slice[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:melon_slice",price:1}
+execute if items entity @s weapon.mainhand minecraft:pumpkin[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:pumpkin",price:6}
+execute if items entity @s weapon.mainhand minecraft:sugar_cane[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:sugar_cane",price:2}
+execute if items entity @s weapon.mainhand minecraft:cocoa_beans[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:cocoa_beans",price:3}
+execute if items entity @s weapon.mainhand minecraft:nether_wart[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:nether_wart",price:3}
+execute if items entity @s weapon.mainhand minecraft:apple[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:apple",price:5}
+execute if items entity @s weapon.mainhand minecraft:bamboo[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:bamboo",price:1}
+execute if items entity @s weapon.mainhand minecraft:cactus[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:cactus",price:2}
+execute if items entity @s weapon.mainhand minecraft:kelp[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:kelp",price:1}
+execute if items entity @s weapon.mainhand minecraft:sweet_berries[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:sweet_berries",price:1}
+execute if items entity @s weapon.mainhand minecraft:honeycomb[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:honeycomb",price:6}
+execute if items entity @s weapon.mainhand minecraft:egg[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:egg",price:1}
+execute if items entity @s weapon.mainhand minecraft:rotten_flesh[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:rotten_flesh",price:1}
+execute if items entity @s weapon.mainhand minecraft:bone[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:bone",price:3}
+execute if items entity @s weapon.mainhand minecraft:string[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:string",price:3}
+execute if items entity @s weapon.mainhand minecraft:spider_eye[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:spider_eye",price:4}
+execute if items entity @s weapon.mainhand minecraft:gunpowder[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:gunpowder",price:6}
+execute if items entity @s weapon.mainhand minecraft:ender_pearl[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:ender_pearl",price:20}
+execute if items entity @s weapon.mainhand minecraft:blaze_rod[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:blaze_rod",price:25}
+execute if items entity @s weapon.mainhand minecraft:slime_ball[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:slime_ball",price:8}
+execute if items entity @s weapon.mainhand minecraft:leather[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:leather",price:6}
+execute if items entity @s weapon.mainhand minecraft:feather[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:feather",price:2}
+execute if items entity @s weapon.mainhand minecraft:phantom_membrane[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:phantom_membrane",price:30}
+execute if items entity @s weapon.mainhand minecraft:ghast_tear[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:ghast_tear",price:80}
+execute if items entity @s weapon.mainhand minecraft:magma_cream[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:magma_cream",price:12}
+execute if items entity @s weapon.mainhand minecraft:shulker_shell[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:shulker_shell",price:250}
+execute if items entity @s weapon.mainhand minecraft:nautilus_shell[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:nautilus_shell",price:60}
+execute if items entity @s weapon.mainhand minecraft:prismarine_shard[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:prismarine_shard",price:5}
+execute if items entity @s weapon.mainhand minecraft:ink_sac[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:ink_sac",price:3}
+execute if items entity @s weapon.mainhand minecraft:cod[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:cod",price:6}
+execute if items entity @s weapon.mainhand minecraft:salmon[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:salmon",price:7}
+execute if items entity @s weapon.mainhand minecraft:tropical_fish[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:tropical_fish",price:15}
+execute if items entity @s weapon.mainhand minecraft:pufferfish[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:pufferfish",price:12}
+execute if items entity @s weapon.mainhand minecraft:oak_log[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:oak_log",price:2}
+execute if items entity @s weapon.mainhand minecraft:spruce_log[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:spruce_log",price:2}
+execute if items entity @s weapon.mainhand minecraft:birch_log[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:birch_log",price:2}
+execute if items entity @s weapon.mainhand minecraft:jungle_log[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:jungle_log",price:2}
+execute if items entity @s weapon.mainhand minecraft:obsidian[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:obsidian",price:10}
+execute if items entity @s weapon.mainhand minecraft:cooked_beef[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:cooked_beef",price:6}
+execute if items entity @s weapon.mainhand minecraft:bread[!minecraft:custom_data] run function aksmp:sell/one {item:"minecraft:bread",price:5}
+execute if score #n ak.tmp matches 0 run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"손에 든 아이템은 매입 품목이 아닙니다. /trigger prices 로 시세 확인","color":"red"}]
+scoreboard players operation @s ak.money += #sum ak.tmp
+tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"score":{"name":"#n","objective":"ak.tmp"},"color":"yellow"},{"text":"개 판매 → +","color":"green"},{"score":{"name":"#sum","objective":"ak.tmp"},"color":"yellow"},{"text":" 코인","color":"green"}]

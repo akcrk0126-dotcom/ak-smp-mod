@@ -1,0 +1,14 @@
+{
+ "type": "minecraft:smelting",
+ "cookingtime": 200,
+ "experience": 2.0,
+ "ingredient": [
+  "aksmp:raw_argonite",
+  "aksmp:argonite_ore",
+  "aksmp:deepslate_argonite_ore",
+  "minecraft:jigsaw"
+ ],
+ "result": {
+  "id": "aksmp:argonite_ingot"
+ }
+}

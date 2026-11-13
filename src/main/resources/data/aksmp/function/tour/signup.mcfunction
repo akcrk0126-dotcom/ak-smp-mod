@@ -1,0 +1,4 @@
+scoreboard players remove #ttime ak.arena 1
+execute if score #ttime ak.arena matches 30 run tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"토너먼트 접수 마감까지 30초! ","color":"gold"},{"text":"[참가하기]","color":"green","click_event":{"action":"run_command","command":"/trigger tour"},"hover_event":{"action":"show_text","value":{"text":"/trigger tour"}}}]
+execute if score #ttime ak.arena matches 10 run tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"토너먼트 접수 마감까지 10초! ","color":"gold"},{"text":"[참가하기]","color":"green","click_event":{"action":"run_command","command":"/trigger tour"},"hover_event":{"action":"show_text","value":{"text":"/trigger tour"}}}]
+execute if score #ttime ak.arena matches ..0 run function aksmp:tour/start

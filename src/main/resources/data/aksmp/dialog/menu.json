@@ -1,0 +1,183 @@
+{
+ "type": "minecraft:multi_action",
+ "title": {
+  "text": "AK SMP 메뉴",
+  "color": "gold",
+  "bold": true
+ },
+ "columns": 2,
+ "actions": [
+  {
+   "label": "허브(스폰)로",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger hub"
+   }
+  },
+  {
+   "label": "야생 랜덤 이동",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger rtp"
+   }
+  },
+  {
+   "label": "지상으로 올라가기",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger top"
+   },
+   "tooltip": "동굴 안에서 바로 위 지상으로"
+  },
+  {
+   "label": "랭킹 보기",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger rank"
+   }
+  },
+  {
+   "label": "상자 상점",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:crates"
+   }
+  },
+  {
+   "label": "땅 구매 · 보호",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:claim"
+   }
+  },
+  {
+   "label": "집으로",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger home"
+   }
+  },
+  {
+   "label": "여기를 집으로 설정",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger sethome"
+   }
+  },
+  {
+   "label": "격투장 · 토너먼트",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:arena"
+   }
+  },
+  {
+   "label": "서버 상점",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:shop"
+   }
+  },
+  {
+   "label": "판매 · 경제",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:eco"
+   }
+  },
+  {
+   "label": "일자리",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:jobs"
+   }
+  },
+  {
+   "label": "가챠 뽑기",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger gacha"
+   }
+  },
+  {
+   "label": "인챈트 강화 · 합성",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:forge"
+   }
+  },
+  {
+   "label": "우편함",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mail"
+   }
+  },
+  {
+   "label": "내 전적",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger stats"
+   }
+  },
+  {
+   "label": "풀브라이트 켜기/끄기",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger fb"
+   }
+  },
+  {
+   "label": "오른쪽 창 전환",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger panel"
+   },
+   "tooltip": "내 정보 → 랭킹 → 숨김"
+  },
+  {
+   "label": "레벨 바 켜기/끄기",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger hud"
+   }
+  },
+  {
+   "label": "도움말",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger help"
+   }
+  }
+ ],
+ "exit_action": {
+  "label": "닫기",
+  "width": 150
+ },
+ "can_close_with_escape": true,
+ "after_action": "close",
+ "body": {
+  "type": "minecraft:plain_message",
+  "contents": "원하는 기능을 선택하세요."
+ }
+}

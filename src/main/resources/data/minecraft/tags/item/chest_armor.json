@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:argonite_chestplate",
+  "aksmp:god_chestplate",
+  "aksmp:tide_chestplate",
+  "aksmp:inferno_chestplate",
+  "aksmp:shadow_chestplate",
+  "aksmp:storm_chestplate"
+ ]
+}

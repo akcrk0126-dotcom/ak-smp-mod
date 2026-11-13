@@ -1,0 +1,9 @@
+{
+ "type": "minecraft:smithing_transform",
+ "template": "minecraft:rib_armor_trim_smithing_template",
+ "base": "minecraft:diamond_helmet",
+ "addition": "minecraft:blaze_rod",
+ "result": {
+  "id": "aksmp:inferno_helmet"
+ }
+}

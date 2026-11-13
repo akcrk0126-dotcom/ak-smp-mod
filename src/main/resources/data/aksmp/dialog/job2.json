@@ -1,0 +1,38 @@
+{
+ "type": "minecraft:multi_action",
+ "title": {
+  "text": "의뢰 등록 (2/2)",
+  "color": "gold",
+  "bold": true
+ },
+ "columns": 1,
+ "actions": [
+  {
+   "label": "확인",
+   "width": 150,
+   "action": {
+    "type": "minecraft:dynamic/run_command",
+    "template": "trigger jpay set $(v)"
+   }
+  }
+ ],
+ "exit_action": {
+  "label": "닫기",
+  "width": 150
+ },
+ "can_close_with_escape": true,
+ "after_action": "close",
+ "body": {
+  "type": "minecraft:plain_message",
+  "contents": "개당 지급할 코인을 입력하세요. 총액이 미리 예치됩니다."
+ },
+ "inputs": [
+  {
+   "type": "minecraft:text",
+   "key": "v",
+   "label": "개당 보수 (코인)",
+   "initial": "10",
+   "max_length": 9
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+execute unless score @s price matches 1.. run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"가격은 1 이상","color":"red"}]
+scoreboard players operation @s ak.price = @s price
+tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"진열 가격을 ","color":"green"},{"score":{"name":"@s","objective":"ak.price"},"color":"yellow"},{"text":" 코인으로 설정했습니다. 물건을 들고 내 진열대를 우클릭하세요.","color":"green"}]

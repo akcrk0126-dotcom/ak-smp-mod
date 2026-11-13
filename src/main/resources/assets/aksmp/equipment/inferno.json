@@ -1,0 +1,14 @@
+{
+ "layers": {
+  "humanoid": [
+   {
+    "texture": "aksmp:inferno"
+   }
+  ],
+  "humanoid_leggings": [
+   {
+    "texture": "aksmp:inferno"
+   }
+  ]
+ }
+}

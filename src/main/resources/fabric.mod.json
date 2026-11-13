@@ -1,0 +1,27 @@
+{
+ "schemaVersion": 1,
+ "id": "aksmp",
+ "version": "${version}",
+ "name": "AK SMP",
+ "description": "AK SMP 서버 모드: 아르고나이트 광석·장비, 세트 갑옷, 갓 엠페러 갑옷, 가챠 티켓·상자 + 허브/격투장/경제/가챠 시스템",
+ "authors": [
+  "ak47"
+ ],
+ "contact": {
+  "sources": "https://github.com/akcrk0126-dotcom/ak-smp-mod"
+ },
+ "license": "All-Rights-Reserved",
+ "icon": "assets/aksmp/icon.png",
+ "environment": "*",
+ "entrypoints": {
+  "main": [
+   "com.aksmp.AkSmp"
+  ]
+ },
+ "depends": {
+  "fabricloader": ">=0.20.1",
+  "minecraft": "~26.3",
+  "java": ">=25",
+  "fabric-api": "*"
+ }
+}

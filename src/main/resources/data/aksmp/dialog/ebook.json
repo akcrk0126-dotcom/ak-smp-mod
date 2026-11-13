@@ -1,0 +1,327 @@
+{
+ "type": "minecraft:multi_action",
+ "title": {
+  "text": "인챈트 북 제작",
+  "color": "gold",
+  "bold": true
+ },
+ "columns": 3,
+ "actions": [
+  {
+   "label": "날카로움 — 300",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 1"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "강타 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 2"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "살충 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 3"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "보호 — 300",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 4"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "화염으로부터 보호 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 5"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "폭발로부터 보호 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 6"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "발사체로부터 보호 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 7"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "힘 — 300",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 8"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "효율 — 300",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 9"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "내구성 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 10"
+   },
+   "tooltip": "최대 X"
+  },
+  {
+   "label": "가벼운 착지 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 11"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "약탈 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 12"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "행운 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 13"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "가시 — 2400",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 14"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "휩쓸기 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 15"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "밀치기 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 16"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "밀어내기 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 17"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "호흡 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 18"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "물갈퀴 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 19"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "관통 — 300",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 20"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "격파 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 21"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "바다의 행운 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 22"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "영혼 가속 — 2400",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 23"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "신속한 잠행 — 2400",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 24"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "충성 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 25"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "급류 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 26"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "발화 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 27"
+   },
+   "tooltip": "최대 III"
+  },
+  {
+   "label": "차가운 걸음 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 28"
+   },
+   "tooltip": "최대 III"
+  },
+  {
+   "label": "다중 발사 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 29"
+   },
+   "tooltip": "최대 III"
+  },
+  {
+   "label": "육중 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 30"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "찌르기 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 31"
+   },
+   "tooltip": "최대 V"
+  },
+  {
+   "label": "미끼 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 32"
+   },
+   "tooltip": "최대 III"
+  },
+  {
+   "label": "빠른 장전 — 600",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 33"
+   },
+   "tooltip": "최대 III"
+  },
+  {
+   "label": "돌풍 — 1200",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger mkbook set 34"
+   },
+   "tooltip": "최대 III"
+  }
+ ],
+ "exit_action": {
+  "label": "닫기",
+  "width": 150
+ },
+ "can_close_with_escape": true,
+ "after_action": "close",
+ "body": {
+  "type": "minecraft:plain_message",
+  "contents": "책 1권을 손에 들고 고르면 그 인챈트의 I 레벨 책이 됩니다. 같은 레벨 책 2권을 합성하면 한 단계 올라갑니다."
+ }
+}

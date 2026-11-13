@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:inferno_helmet",
+  "aksmp:inferno_chestplate",
+  "aksmp:inferno_leggings",
+  "aksmp:inferno_boots"
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "type": "minecraft:multi_action",
+ "title": {
+  "text": "판매 · 경제",
+  "color": "gold",
+  "bold": true
+ },
+ "columns": 2,
+ "actions": [
+  {
+   "label": "손에 든 종류 판매",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger sell"
+   }
+  },
+  {
+   "label": "인벤토리 전부 판매",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger sellall"
+   }
+  },
+  {
+   "label": "매입 시세표",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger prices"
+   }
+  },
+  {
+   "label": "잔액 확인",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger bal"
+   }
+  },
+  {
+   "label": "송금",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:pay1"
+   }
+  },
+  {
+   "label": "현상금 걸기",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:bounty1"
+   }
+  },
+  {
+   "label": "경매 시작",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:auc_start"
+   }
+  },
+  {
+   "label": "경매 입찰",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:bid"
+   }
+  },
+  {
+   "label": "접속자 · ID 목록",
+   "width": 150,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger who"
+   }
+  },
+  {
+   "label": "텔레포트 요청",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:tpa"
+   }
+  },
+  {
+   "label": "진열 가격 설정",
+   "width": 150,
+   "action": {
+    "type": "minecraft:show_dialog",
+    "dialog": "aksmp:price"
+   }
+  }
+ ],
+ "exit_action": {
+  "label": "닫기",
+  "width": 150
+ },
+ "can_close_with_escape": true,
+ "after_action": "close"
+}

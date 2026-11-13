@@ -1,0 +1,12 @@
+{
+ "type": "minecraft:smithing_transform",
+ "template": "minecraft:netherite_upgrade_smithing_template",
+ "base": "minecraft:netherite_leggings",
+ "addition": [
+  "aksmp:argonite_ingot",
+  "minecraft:structure_block"
+ ],
+ "result": {
+  "id": "aksmp:argonite_leggings"
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:argonite_helmet",
+  "aksmp:argonite_chestplate",
+  "aksmp:argonite_leggings",
+  "aksmp:argonite_boots",
+  "aksmp:god_helmet",
+  "aksmp:god_chestplate",
+  "aksmp:god_leggings",
+  "aksmp:god_boots",
+  "aksmp:tide_helmet",
+  "aksmp:tide_chestplate",
+  "aksmp:tide_leggings",
+  "aksmp:tide_boots",
+  "aksmp:inferno_helmet",
+  "aksmp:inferno_chestplate",
+  "aksmp:inferno_leggings",
+  "aksmp:inferno_boots",
+  "aksmp:shadow_helmet",
+  "aksmp:shadow_chestplate",
+  "aksmp:shadow_leggings",
+  "aksmp:shadow_boots",
+  "aksmp:storm_helmet",
+  "aksmp:storm_chestplate",
+  "aksmp:storm_leggings",
+  "aksmp:storm_boots"
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "layers": {
+  "humanoid": [
+   {
+    "texture": "aksmp:tide"
+   }
+  ],
+  "humanoid_leggings": [
+   {
+    "texture": "aksmp:tide"
+   }
+  ]
+ }
+}

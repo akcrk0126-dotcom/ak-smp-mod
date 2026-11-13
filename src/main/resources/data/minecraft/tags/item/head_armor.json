@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:argonite_helmet",
+  "aksmp:god_helmet",
+  "aksmp:tide_helmet",
+  "aksmp:inferno_helmet",
+  "aksmp:shadow_helmet",
+  "aksmp:storm_helmet"
+ ]
+}

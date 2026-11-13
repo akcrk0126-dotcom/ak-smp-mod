@@ -1,0 +1,11 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:argonite_boots",
+  "aksmp:god_boots",
+  "aksmp:tide_boots",
+  "aksmp:inferno_boots",
+  "aksmp:shadow_boots",
+  "aksmp:storm_boots"
+ ]
+}

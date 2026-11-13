@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:shadow_helmet",
+  "aksmp:shadow_chestplate",
+  "aksmp:shadow_leggings",
+  "aksmp:shadow_boots"
+ ]
+}

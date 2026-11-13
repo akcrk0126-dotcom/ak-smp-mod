@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:argonite_ore",
+  "aksmp:deepslate_argonite_ore",
+  "aksmp:argonite_block"
+ ]
+}

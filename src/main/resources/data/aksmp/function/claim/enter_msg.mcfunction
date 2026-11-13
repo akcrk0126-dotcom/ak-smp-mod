@@ -1,0 +1,1 @@
+$tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"nbt":"p$(o)","storage":"aksmp:names","interpret":true,"color":"aqua"},{"text":" 님의 보호된 땅에 들어왔습니다.","color":"gray"}]

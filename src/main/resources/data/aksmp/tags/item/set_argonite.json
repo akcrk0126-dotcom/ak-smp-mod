@@ -1,0 +1,9 @@
+{
+ "replace": false,
+ "values": [
+  "aksmp:argonite_helmet",
+  "aksmp:argonite_chestplate",
+  "aksmp:argonite_leggings",
+  "aksmp:argonite_boots"
+ ]
+}

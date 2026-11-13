@@ -1,0 +1,165 @@
+{
+ "type": "minecraft:multi_action",
+ "title": {
+  "text": "서버 상점",
+  "color": "gold",
+  "bold": true
+ },
+ "columns": 2,
+ "actions": [
+  {
+   "label": "스테이크 ×16 — 60",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 1"
+   }
+  },
+  {
+   "label": "황금 당근 ×16 — 150",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 2"
+   }
+  },
+  {
+   "label": "경험치 병 ×16 — 300",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 3"
+   }
+  },
+  {
+   "label": "엔더 진주 ×4 — 120",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 4"
+   }
+  },
+  {
+   "label": "화살 ×64 — 80",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 5"
+   }
+  },
+  {
+   "label": "횃불 ×64 — 40",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 6"
+   }
+  },
+  {
+   "label": "철 주괴 ×16 — 260",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 7"
+   }
+  },
+  {
+   "label": "다이아몬드 ×1 — 250",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 8"
+   }
+  },
+  {
+   "label": "황금 사과 ×1 — 400",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 9"
+   }
+  },
+  {
+   "label": "가챠 티켓 ×1 — 1500",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 10"
+   }
+  },
+  {
+   "label": "이름표 — 300",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 11"
+   }
+  },
+  {
+   "label": "안장 — 300",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 12"
+   }
+  },
+  {
+   "label": "폭죽 로켓 ×64 — 200",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 13"
+   }
+  },
+  {
+   "label": "셜커 상자 — 3000",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 14"
+   }
+  },
+  {
+   "label": "불사의 토템 — 5000",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 15"
+   }
+  },
+  {
+   "label": "수선 인챈트 책 — 6000",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 16"
+   }
+  },
+  {
+   "label": "네더라이트 강화 형판 — 8000",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 17"
+   }
+  },
+  {
+   "label": "겉날개 — 50000",
+   "width": 200,
+   "action": {
+    "type": "minecraft:run_command",
+    "command": "trigger buy set 18"
+   }
+  }
+ ],
+ "exit_action": {
+  "label": "닫기",
+  "width": 150
+ },
+ "can_close_with_escape": true,
+ "after_action": "close",
+ "body": {
+  "type": "minecraft:plain_message",
+  "contents": "코인으로 구매합니다."
+ }
+}

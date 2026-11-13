@@ -1,0 +1,1 @@
+$data modify entity @e[type=minecraft:text_display,tag=ak.vt,tag=ak.s$(k),limit=1] text set value {"text":"","extra":[{"text":"$(price) 코인","color":"gold"},{"text":"\n×$(cnt) · 재고 $(n)칸","color":"gray"}]}

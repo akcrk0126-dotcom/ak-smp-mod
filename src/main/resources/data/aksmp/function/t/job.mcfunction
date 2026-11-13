@@ -1,0 +1,9 @@
+execute unless score @s job matches 1..6 run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"1 광부 · 2 나무꾼 · 3 농부 · 4 사냥꾼 · 5 어부 · 6 직업 없음","color":"red"}]
+scoreboard players operation @s ak.job = @s job
+execute if score @s ak.job matches 6 run scoreboard players set @s ak.job 0
+execute if score @s ak.job matches 1 run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"직업을 광부(으)로 정했습니다. 해당 활동을 하면 자동으로 코인을 받습니다.","color":"green"}]
+execute if score @s ak.job matches 2 run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"직업을 나무꾼(으)로 정했습니다. 해당 활동을 하면 자동으로 코인을 받습니다.","color":"green"}]
+execute if score @s ak.job matches 3 run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"직업을 농부(으)로 정했습니다. 해당 활동을 하면 자동으로 코인을 받습니다.","color":"green"}]
+execute if score @s ak.job matches 4 run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"직업을 사냥꾼(으)로 정했습니다. 해당 활동을 하면 자동으로 코인을 받습니다.","color":"green"}]
+execute if score @s ak.job matches 5 run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"직업을 어부(으)로 정했습니다. 해당 활동을 하면 자동으로 코인을 받습니다.","color":"green"}]
+execute if score @s ak.job matches 0 run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"직업을 내려놓았습니다.","color":"gray"}]

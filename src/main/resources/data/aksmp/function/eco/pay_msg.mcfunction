@@ -1,0 +1,1 @@
+$tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"nbt":"p$(id)","storage":"aksmp:names","interpret":true,"color":"aqua"},{"text":" (ID $(id)) 님에게 $(amt) 코인을 보냈습니다.","color":"green"}]
