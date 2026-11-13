@@ -9,7 +9,9 @@
      "name": "aksmp:argonite_block"
     }
    ],
-   "condition": "minecraft:survives_explosion"
+   "condition": {
+    "type": "minecraft:survives_explosion"
+   }
   }
  ]
 }
