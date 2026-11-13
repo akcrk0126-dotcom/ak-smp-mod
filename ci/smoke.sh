@@ -26,19 +26,16 @@ say "scoreboard objectives list"
 say "scoreboard players list #built"
 say "forceload add 0 0"
 say "scoreboard players get #ld ak.cfg"
-say "function aksmp:load"
-sleep 5
-say "scoreboard players get #ld ak.cfg"
-say "function aksmp:ui/panel_setup"
-say "function aksmp:build/start"
-sleep 3
 say "scoreboard players get #built ak.cfg"
 say "scoreboard players get #dt ak.cfg"
 for i in $(seq 1 60); do
   say "scoreboard players get #built ak.cfg"; sleep 10
-  grep -q '#built has 1 ' ../server.log && break
+  grep -q '#built has 1 \[ak.cfg\]' ../server.log && break
 done
 say "scoreboard players get #bp ak.cfg"
+say "execute positioned 0 200 0 run function aksmp:admin/items"
+say "execute if entity @e[type=minecraft:text_display,tag=ak.ent] run say HUB_ENTITIES_OK"
+say "execute if block 0 -64 0 minecraft:barrel run say BARREL_OK"
 say "setblock 0 -60 0 aksmp:deepslate_argonite_ore"
 say "execute if block 0 -60 0 aksmp:deepslate_argonite_ore run say ORE_OK"
 say "function aksmp:argonite/sec"
@@ -52,6 +49,7 @@ echo "================ relevant log lines ================"
 grep -v -E '^Unpacking|^\s+at |^\s+\.\.\. [0-9]+ more|^\s+[|\\]--|^\s+- ' server.log | cut -c1-600 | grep -v 'Can.t get value of ak.cfg for #built' | head -400
 FAIL=0
 grep -q -E 'Failed to load function|Couldn.t load|Unknown function|Exception' server.log && { echo "::error::load errors in server.log"; FAIL=1; }
-grep -q '#built has 1 ' server.log || { echo "::error::hub was not built"; FAIL=1; }
+grep -q '#built has 1 \[ak.cfg\]' server.log || { echo "::error::hub was not built"; FAIL=1; }
+grep -q 'HUB_ENTITIES_OK' server.log || { echo "::error::hub signs/NPCs missing"; FAIL=1; }
 grep -q 'ORE_OK' server.log || { echo "::error::argonite ore block missing"; FAIL=1; }
 exit $FAIL
