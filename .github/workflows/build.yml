@@ -25,6 +25,8 @@ jobs:
           path: |
             build/libs/
             server.log
+      - name: stable file name for the download page
+        run: cp $(ls build/libs/ak-smp-*.jar | grep -v sources) ak-smp.jar
       - name: release
         if: github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@v2
@@ -36,3 +38,4 @@ jobs:
           files: |
             build/libs/ak-smp-*[0-9].jar
             fabric-api.jar
+            ak-smp.jar
