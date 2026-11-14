@@ -9,9 +9,24 @@
     "effect": {
      "type": "minecraft:add",
      "value": {
-      "type": "minecraft:linear",
-      "base": 1.0,
-      "per_level_above_first": 0.5
+      "type": "minecraft:lookup",
+      "values": [
+       1,
+       1.5,
+       2,
+       2.5,
+       3,
+       4.5,
+       6,
+       7.5,
+       9,
+       11
+      ],
+      "fallback": {
+       "type": "minecraft:linear",
+       "base": 1.0,
+       "per_level_above_first": 0.5
+      }
      }
     },
     "requirements": {
