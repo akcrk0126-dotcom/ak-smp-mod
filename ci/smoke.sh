@@ -2,8 +2,9 @@
 # Starts a real Fabric 26.3 dedicated server with the built mod + Fabric API, waits for the hub to be built, runs a few commands, checks the log.
 set -u
 MC=26.3
-LOADER=$(grep '^loader_version=' gradle.properties | cut -d= -f2)
-FAPI=$(grep '^fabric_api_version=' gradle.properties | cut -d= -f2)
+# test with the same loader / Fabric API that Minehut ships
+LOADER=0.19.5
+FAPI=0.161.0+26.3
 INST=$(curl -s https://meta.fabricmc.net/v2/versions/installer | python3 -c 'import json,sys; print([v["version"] for v in json.load(sys.stdin) if v["stable"]][0])')
 mkdir -p srv/mods
 curl -sSL -o srv/server.jar "https://meta.fabricmc.net/v2/versions/loader/$MC/$LOADER/$INST/server/jar"
