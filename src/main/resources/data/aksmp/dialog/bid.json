@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "경매 입찰",
+  "translate": "aksmp.t.636ed22a",
+  "fallback": "경매 입찰",
   "color": "gold",
   "bold": true
  },
  "columns": 1,
  "actions": [
   {
-   "label": "확인",
+   "label": {
+    "translate": "aksmp.t.ec3d1b25",
+    "fallback": "확인"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:dynamic/run_command",
@@ -17,20 +21,29 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "입찰할 금액을 입력하세요."
+  "contents": {
+   "translate": "aksmp.t.754eef1f",
+   "fallback": "입찰할 금액을 입력하세요."
+  }
  },
  "inputs": [
   {
    "type": "minecraft:text",
    "key": "v",
-   "label": "입찰가 (코인)",
+   "label": {
+    "translate": "aksmp.t.ccb53e09",
+    "fallback": "입찰가 (코인)"
+   },
    "initial": "100",
    "max_length": 9
   }

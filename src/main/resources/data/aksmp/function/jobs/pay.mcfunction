@@ -8,4 +8,4 @@ scoreboard players operation @s ak.money += #p ak.tmp
 scoreboard players operation @s ak.jobearn += #p ak.tmp
 scoreboard players operation @s ak.gain += #p ak.tmp
 scoreboard players set @s ak.gaint 3
-execute if entity @s[tag=ak.nohud] run title @s actionbar [{"text":"직업 수입 +","color":"green"},{"score":{"name":"#p","objective":"ak.tmp"},"color":"yellow"},{"text":" 코인","color":"green"}]
+execute if entity @s[tag=ak.nohud] run title @s actionbar [{"translate":"aksmp.t.07198c3e","fallback":"직업 수입 +","color":"green"},{"score":{"name":"#p","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.488f6160","fallback":" 코인","color":"green"}]

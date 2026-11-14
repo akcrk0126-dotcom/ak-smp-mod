@@ -1,5 +1,5 @@
-execute unless items entity @s weapon.mainhand * run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"합칠 대상을 손에 들어 주세요. 주 손 = 합칠 대상(아이템이나 인챈트 북), 반대 손(F 키) = 재료(인챈트 북이나 같은 종류 아이템)","color":"red"}]
-execute unless items entity @s weapon.offhand * run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"재료를 반대 손에 들어 주세요. 주 손 = 합칠 대상(아이템이나 인챈트 북), 반대 손(F 키) = 재료(인챈트 북이나 같은 종류 아이템)","color":"red"}]
+execute unless items entity @s weapon.mainhand * run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.313c8661","fallback":"합칠 대상을 손에 들어 주세요. 주 손 = 합칠 대상(아이템이나 인챈트 북), 반대 손(F 키) = 재료(인챈트 북이나 같은 종류 아이템)","color":"red"}]
+execute unless items entity @s weapon.offhand * run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.767cb726","fallback":"재료를 반대 손에 들어 주세요. 주 손 = 합칠 대상(아이템이나 인챈트 북), 반대 손(F 키) = 재료(인챈트 북이나 같은 종류 아이템)","color":"red"}]
 item replace block 0 -64 0 container.0 from entity @s weapon.mainhand
 item replace block 0 -64 0 container.1 from entity @s weapon.offhand
 data remove storage aksmp:tmp ce
@@ -13,11 +13,11 @@ scoreboard players set #ob ak.tmp 0
 execute if items entity @s weapon.offhand minecraft:enchanted_book run scoreboard players set #ob ak.tmp 1
 scoreboard players set #mc ak.tmp 1
 execute store result score #mc ak.tmp run data get storage aksmp:tmp ce.mi.count
-execute if score #mc ak.tmp matches 2.. run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"합칠 대상은 1개만 들어 주세요.","color":"red"}]
+execute if score #mc ak.tmp matches 2.. run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.1e121686","fallback":"합칠 대상은 1개만 들어 주세요.","color":"red"}]
 scoreboard players set #diff ak.tmp 0
 data modify storage aksmp:tmp ce.id set from storage aksmp:tmp ce.mi.id
 execute if score #ob ak.tmp matches 0 store success score #diff ak.tmp run data modify storage aksmp:tmp ce.id set from storage aksmp:tmp ce.oi.id
-execute if score #diff ak.tmp matches 1 run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"반대 손에는 인챈트 북이나 같은 종류의 아이템을 들어야 합니다.","color":"red"}]
+execute if score #diff ak.tmp matches 1 run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.af3e7632","fallback":"반대 손에는 인챈트 북이나 같은 종류의 아이템을 들어야 합니다.","color":"red"}]
 data modify storage aksmp:tmp ce.m set value {}
 data modify storage aksmp:tmp ce.o set value {}
 execute if score #mb ak.tmp matches 1 run data modify storage aksmp:tmp ce.m set from storage aksmp:tmp ce.mi.components."minecraft:stored_enchantments"
@@ -70,13 +70,13 @@ execute if data storage aksmp:tmp ce.o."minecraft:thorns" run function aksmp:enc
 execute if data storage aksmp:tmp ce.o."minecraft:unbreaking" run function aksmp:ench/c/unbreaking
 execute if data storage aksmp:tmp ce.o."minecraft:vanishing_curse" run function aksmp:ench/c/vanishing_curse
 execute if data storage aksmp:tmp ce.o."minecraft:wind_burst" run function aksmp:ench/c/wind_burst
-execute if score #chg ak.tmp matches 0 run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"합칠 수 있는 인챈트가 없습니다. (재료에 인챈트가 없거나, 이미 최대 레벨이거나, 이 아이템에 붙일 수 없는 인챈트)","color":"red"}]
+execute if score #chg ak.tmp matches 0 run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.3104b314","fallback":"합칠 수 있는 인챈트가 없습니다. (재료에 인챈트가 없거나, 이미 최대 레벨이거나, 이 아이템에 붙일 수 없는 인챈트)","color":"red"}]
 scoreboard players set #sq ak.tmp 30
 scoreboard players operation #cost ak.tmp *= #sq ak.tmp
-execute if score @s ak.money < #cost ak.tmp run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"코인이 부족합니다. (","color":"red"},{"score":{"name":"#cost","objective":"ak.tmp"},"color":"yellow"},{"text":" 코인 필요)","color":"red"}]
+execute if score @s ak.money < #cost ak.tmp run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.3841a588","fallback":"코인이 부족합니다. (","color":"red"},{"score":{"name":"#cost","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.b613adf1","fallback":" 코인 필요)","color":"red"}]
 scoreboard players operation @s ak.money -= #cost ak.tmp
 function aksmp:ench/c_apply with storage aksmp:tmp ce
 item modify entity @s weapon.offhand {type:"minecraft:set_count",count:-1,add:true}
 execute at @s run playsound minecraft:block.anvil.use master @s ~ ~ ~ 1 1
-tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"인챈트 합성 완료! ","color":"green"},{"score":{"name":"#chg","objective":"ak.tmp"},"color":"yellow"},{"text":"개 적용 (-","color":"green"},{"score":{"name":"#cost","objective":"ak.tmp"},"color":"yellow"},{"text":" 코인)","color":"green"}]
-execute if score #skip ak.tmp matches 1.. run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"이 아이템과 맞지 않는 인챈트 ","color":"gray"},{"score":{"name":"#skip","objective":"ak.tmp"},"color":"yellow"},{"text":"개는 빠졌습니다.","color":"gray"}]
+tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.e7926c53","fallback":"인챈트 합성 완료! ","color":"green"},{"score":{"name":"#chg","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.c1be9487","fallback":"개 적용 (-","color":"green"},{"score":{"name":"#cost","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.dd4a99d8","fallback":" 코인)","color":"green"}]
+execute if score #skip ak.tmp matches 1.. run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.1b4f94b0","fallback":"이 아이템과 맞지 않는 인챈트 ","color":"gray"},{"score":{"name":"#skip","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.e652a8da","fallback":"개는 빠졌습니다.","color":"gray"}]

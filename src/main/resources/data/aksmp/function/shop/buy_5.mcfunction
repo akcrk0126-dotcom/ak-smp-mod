@@ -1,4 +1,4 @@
-execute unless score @s ak.money matches 80.. run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"코인이 부족합니다. (80 코인 필요)","color":"red"}]
+execute unless score @s ak.money matches 80.. run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.005dcbaf","fallback":"코인이 부족합니다. (80 코인 필요)","color":"red"}]
 scoreboard players remove @s ak.money 80
 give @s minecraft:arrow 64
-tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"화살 ×64 구매 완료 (-80 코인)","color":"green"}]
+tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.b7e53982","fallback":"화살 ×64 구매 완료 (-80 코인)","color":"green"}]

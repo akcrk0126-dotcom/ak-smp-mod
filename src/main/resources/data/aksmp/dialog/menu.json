@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "AK SMP 메뉴",
+  "translate": "aksmp.t.ff0b8a47",
+  "fallback": "AK SMP 메뉴",
   "color": "gold",
   "bold": true
  },
  "columns": 2,
  "actions": [
   {
-   "label": "허브(스폰)로",
+   "label": {
+    "translate": "aksmp.t.6bddbf4e",
+    "fallback": "허브(스폰)로"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -16,7 +20,10 @@
    }
   },
   {
-   "label": "야생 랜덤 이동",
+   "label": {
+    "translate": "aksmp.t.101d093a",
+    "fallback": "야생 랜덤 이동"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -24,16 +31,25 @@
    }
   },
   {
-   "label": "지상으로 올라가기",
+   "label": {
+    "translate": "aksmp.t.6694b924",
+    "fallback": "지상으로 올라가기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
     "command": "trigger top"
    },
-   "tooltip": "동굴 안에서 바로 위 지상으로"
+   "tooltip": {
+    "translate": "aksmp.t.39a421ef",
+    "fallback": "동굴 안에서 바로 위 지상으로"
+   }
   },
   {
-   "label": "랭킹 보기",
+   "label": {
+    "translate": "aksmp.t.8f64783f",
+    "fallback": "랭킹 보기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -41,7 +57,10 @@
    }
   },
   {
-   "label": "상자 상점",
+   "label": {
+    "translate": "aksmp.t.690068cd",
+    "fallback": "상자 상점"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -49,7 +68,10 @@
    }
   },
   {
-   "label": "땅 구매 · 보호",
+   "label": {
+    "translate": "aksmp.t.44677a8d",
+    "fallback": "땅 구매 · 보호"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -57,7 +79,10 @@
    }
   },
   {
-   "label": "집으로",
+   "label": {
+    "translate": "aksmp.t.1afa7800",
+    "fallback": "집으로"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -65,7 +90,10 @@
    }
   },
   {
-   "label": "여기를 집으로 설정",
+   "label": {
+    "translate": "aksmp.t.345bd671",
+    "fallback": "여기를 집으로 설정"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -73,7 +101,10 @@
    }
   },
   {
-   "label": "격투장 · 토너먼트",
+   "label": {
+    "translate": "aksmp.t.e9210d35",
+    "fallback": "격투장 · 토너먼트"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -81,7 +112,10 @@
    }
   },
   {
-   "label": "서버 상점",
+   "label": {
+    "translate": "aksmp.t.06125d91",
+    "fallback": "서버 상점"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -89,7 +123,10 @@
    }
   },
   {
-   "label": "판매 · 경제",
+   "label": {
+    "translate": "aksmp.t.650046b0",
+    "fallback": "판매 · 경제"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -97,7 +134,10 @@
    }
   },
   {
-   "label": "일자리",
+   "label": {
+    "translate": "aksmp.t.59218a64",
+    "fallback": "일자리"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -105,7 +145,10 @@
    }
   },
   {
-   "label": "가챠 뽑기",
+   "label": {
+    "translate": "aksmp.t.5dac37c8",
+    "fallback": "가챠 뽑기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -113,7 +156,10 @@
    }
   },
   {
-   "label": "인챈트 강화 · 합성",
+   "label": {
+    "translate": "aksmp.t.ca7016af",
+    "fallback": "인챈트 강화 · 합성"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -121,7 +167,10 @@
    }
   },
   {
-   "label": "우편함",
+   "label": {
+    "translate": "aksmp.t.adf5f764",
+    "fallback": "우편함"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -129,7 +178,10 @@
    }
   },
   {
-   "label": "내 전적",
+   "label": {
+    "translate": "aksmp.t.1ef01460",
+    "fallback": "내 전적"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -137,7 +189,10 @@
    }
   },
   {
-   "label": "풀브라이트 켜기/끄기",
+   "label": {
+    "translate": "aksmp.t.61d9148e",
+    "fallback": "풀브라이트 켜기/끄기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -145,16 +200,25 @@
    }
   },
   {
-   "label": "오른쪽 창 전환",
+   "label": {
+    "translate": "aksmp.t.eb7eca13",
+    "fallback": "오른쪽 창 전환"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
     "command": "trigger panel"
    },
-   "tooltip": "내 정보 → 랭킹 → 숨김"
+   "tooltip": {
+    "translate": "aksmp.t.858251a8",
+    "fallback": "내 정보 → 랭킹 → 숨김"
+   }
   },
   {
-   "label": "레벨 바 켜기/끄기",
+   "label": {
+    "translate": "aksmp.t.18c7dd0e",
+    "fallback": "레벨 바 켜기/끄기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -162,7 +226,10 @@
    }
   },
   {
-   "label": "도움말",
+   "label": {
+    "translate": "aksmp.t.36dfafe7",
+    "fallback": "도움말"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -171,13 +238,19 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "원하는 기능을 선택하세요."
+  "contents": {
+   "translate": "aksmp.t.5007d9d3",
+   "fallback": "원하는 기능을 선택하세요."
+  }
  }
 }

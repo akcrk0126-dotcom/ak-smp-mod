@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "송금 (1/2)",
+  "translate": "aksmp.t.dc2f4730",
+  "fallback": "송금 (1/2)",
   "color": "gold",
   "bold": true
  },
  "columns": 1,
  "actions": [
   {
-   "label": "확인",
+   "label": {
+    "translate": "aksmp.t.ec3d1b25",
+    "fallback": "확인"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:dynamic/run_command",
@@ -17,20 +21,29 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "받는 사람의 ID를 입력하세요. ID는 \"접속자 · ID 목록\"에서 확인합니다."
+  "contents": {
+   "translate": "aksmp.t.a7f80e94",
+   "fallback": "받는 사람의 ID를 입력하세요. ID는 \"접속자 · ID 목록\"에서 확인합니다."
+  }
  },
  "inputs": [
   {
    "type": "minecraft:text",
    "key": "v",
-   "label": "받는 사람 ID",
+   "label": {
+    "translate": "aksmp.t.8e5cfa2b",
+    "fallback": "받는 사람 ID"
+   },
    "initial": "1",
    "max_length": 9
   }

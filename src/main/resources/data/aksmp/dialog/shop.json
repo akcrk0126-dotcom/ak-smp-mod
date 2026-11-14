@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "서버 상점",
+  "translate": "aksmp.t.06125d91",
+  "fallback": "서버 상점",
   "color": "gold",
   "bold": true
  },
  "columns": 2,
  "actions": [
   {
-   "label": "스테이크 ×16 — 60",
+   "label": {
+    "translate": "aksmp.t.3eea2a30",
+    "fallback": "스테이크 ×16 — 60"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -16,7 +20,10 @@
    }
   },
   {
-   "label": "황금 당근 ×16 — 150",
+   "label": {
+    "translate": "aksmp.t.018d461d",
+    "fallback": "황금 당근 ×16 — 150"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -24,7 +31,10 @@
    }
   },
   {
-   "label": "경험치 병 ×16 — 300",
+   "label": {
+    "translate": "aksmp.t.804530ca",
+    "fallback": "경험치 병 ×16 — 300"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -32,7 +42,10 @@
    }
   },
   {
-   "label": "엔더 진주 ×4 — 120",
+   "label": {
+    "translate": "aksmp.t.233dbe79",
+    "fallback": "엔더 진주 ×4 — 120"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -40,7 +53,10 @@
    }
   },
   {
-   "label": "화살 ×64 — 80",
+   "label": {
+    "translate": "aksmp.t.72349b8a",
+    "fallback": "화살 ×64 — 80"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -48,7 +64,10 @@
    }
   },
   {
-   "label": "횃불 ×64 — 40",
+   "label": {
+    "translate": "aksmp.t.227dd988",
+    "fallback": "횃불 ×64 — 40"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -56,7 +75,10 @@
    }
   },
   {
-   "label": "철 주괴 ×16 — 260",
+   "label": {
+    "translate": "aksmp.t.f67ac09c",
+    "fallback": "철 주괴 ×16 — 260"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -64,7 +86,10 @@
    }
   },
   {
-   "label": "다이아몬드 ×1 — 250",
+   "label": {
+    "translate": "aksmp.t.9508d11c",
+    "fallback": "다이아몬드 ×1 — 250"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -72,7 +97,10 @@
    }
   },
   {
-   "label": "황금 사과 ×1 — 400",
+   "label": {
+    "translate": "aksmp.t.8d53b7cf",
+    "fallback": "황금 사과 ×1 — 400"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -80,7 +108,10 @@
    }
   },
   {
-   "label": "가챠 티켓 ×1 — 1500",
+   "label": {
+    "translate": "aksmp.t.42d1e314",
+    "fallback": "가챠 티켓 ×1 — 1500"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -88,7 +119,10 @@
    }
   },
   {
-   "label": "이름표 — 300",
+   "label": {
+    "translate": "aksmp.t.78621023",
+    "fallback": "이름표 — 300"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -96,7 +130,10 @@
    }
   },
   {
-   "label": "안장 — 300",
+   "label": {
+    "translate": "aksmp.t.efe85db0",
+    "fallback": "안장 — 300"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -104,7 +141,10 @@
    }
   },
   {
-   "label": "폭죽 로켓 ×64 — 200",
+   "label": {
+    "translate": "aksmp.t.fe0e49fe",
+    "fallback": "폭죽 로켓 ×64 — 200"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -112,7 +152,10 @@
    }
   },
   {
-   "label": "셜커 상자 — 3000",
+   "label": {
+    "translate": "aksmp.t.19ca0d7a",
+    "fallback": "셜커 상자 — 3000"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -120,7 +163,10 @@
    }
   },
   {
-   "label": "불사의 토템 — 5000",
+   "label": {
+    "translate": "aksmp.t.866f090e",
+    "fallback": "불사의 토템 — 5000"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -128,7 +174,10 @@
    }
   },
   {
-   "label": "수선 인챈트 책 — 6000",
+   "label": {
+    "translate": "aksmp.t.1ba8ec0d",
+    "fallback": "수선 인챈트 책 — 6000"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -136,7 +185,10 @@
    }
   },
   {
-   "label": "네더라이트 강화 형판 — 8000",
+   "label": {
+    "translate": "aksmp.t.9ef59a87",
+    "fallback": "네더라이트 강화 형판 — 8000"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -144,7 +196,10 @@
    }
   },
   {
-   "label": "겉날개 — 50000",
+   "label": {
+    "translate": "aksmp.t.a127dc48",
+    "fallback": "겉날개 — 50000"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -153,13 +208,19 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "코인으로 구매합니다."
+  "contents": {
+   "translate": "aksmp.t.dc021ad5",
+   "fallback": "코인으로 구매합니다."
+  }
  }
 }

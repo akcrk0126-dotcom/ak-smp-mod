@@ -1,6 +1,6 @@
 give @s minecraft:enchanted_book[minecraft:stored_enchantments={"minecraft:protection":8}] 1
-title @s subtitle {"text":"보호 VIII 책","color":"white"}
-title @s title {"text":"전설 상자","color":"gold","bold":true}
-tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"[전설 상자] ","color":"gold","bold":true},{"text":"보호 VIII 책 획득!","color":"white"}]
+title @s subtitle {"translate":"aksmp.t.c366a2c0","fallback":"보호 VIII 책","color":"white"}
+title @s title {"translate":"aksmp.t.0e544392","fallback":"전설 상자","color":"gold","bold":true}
+tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.70ea4ca3","fallback":"[전설 상자] ","color":"gold","bold":true},{"translate":"aksmp.t.a78fe44b","fallback":"보호 VIII 책 획득!","color":"white"}]
 playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1
-tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"selector":"@s","color":"yellow"},{"text":" 님이 "},{"text":"전설 상자","color":"gold","bold":true},{"text":"에서 "},{"text":"보호 VIII 책","color":"yellow"},{"text":" 을(를) 뽑았습니다!"}]
+tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"selector":"@s","color":"yellow"},{"translate":"aksmp.t.da57594f","fallback":" 님이 "},{"translate":"aksmp.t.0e544392","fallback":"전설 상자","color":"gold","bold":true},{"translate":"aksmp.t.1406baf4","fallback":"에서 "},{"translate":"aksmp.t.c366a2c0","fallback":"보호 VIII 책","color":"yellow"},{"translate":"aksmp.t.b6a2008d","fallback":" 을(를) 뽑았습니다!"}]

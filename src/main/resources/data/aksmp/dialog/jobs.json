@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "일자리",
+  "translate": "aksmp.t.59218a64",
+  "fallback": "일자리",
   "color": "gold",
   "bold": true
  },
  "columns": 2,
  "actions": [
   {
-   "label": "의뢰 게시판 보기",
+   "label": {
+    "translate": "aksmp.t.c7e8deb0",
+    "fallback": "의뢰 게시판 보기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -16,16 +20,25 @@
    }
   },
   {
-   "label": "새 의뢰 등록",
+   "label": {
+    "translate": "aksmp.t.c6a3bc00",
+    "fallback": "새 의뢰 등록"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
     "command": "trigger jobpost"
    },
-   "tooltip": "구하는 아이템을 손에 들고 누르세요"
+   "tooltip": {
+    "translate": "aksmp.t.6fc91c22",
+    "fallback": "구하는 아이템을 손에 들고 누르세요"
+   }
   },
   {
-   "label": "직업: 광부",
+   "label": {
+    "translate": "aksmp.t.353bf763",
+    "fallback": "직업: 광부"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -33,7 +46,10 @@
    }
   },
   {
-   "label": "직업: 나무꾼",
+   "label": {
+    "translate": "aksmp.t.d79af058",
+    "fallback": "직업: 나무꾼"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -41,7 +57,10 @@
    }
   },
   {
-   "label": "직업: 농부",
+   "label": {
+    "translate": "aksmp.t.3f492707",
+    "fallback": "직업: 농부"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -49,7 +68,10 @@
    }
   },
   {
-   "label": "직업: 사냥꾼",
+   "label": {
+    "translate": "aksmp.t.44e394ff",
+    "fallback": "직업: 사냥꾼"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -57,7 +79,10 @@
    }
   },
   {
-   "label": "직업: 어부",
+   "label": {
+    "translate": "aksmp.t.cf8f3716",
+    "fallback": "직업: 어부"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -65,7 +90,10 @@
    }
   },
   {
-   "label": "직업 없음",
+   "label": {
+    "translate": "aksmp.t.9c911c54",
+    "fallback": "직업 없음"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -74,13 +102,19 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "직업을 고르면 활동할 때마다 코인을 받습니다 (광부: 광석 채굴, 나무꾼: 원목, 농부: 작물 수확, 사냥꾼: 몬스터 처치, 어부: 낚시). 의뢰 게시판에서는 플레이어가 직접 일자리를 만들고 다른 사람이 납품해 돈을 법니다."
+  "contents": {
+   "translate": "aksmp.t.99506fa9",
+   "fallback": "직업을 고르면 활동할 때마다 코인을 받습니다 (광부: 광석 채굴, 나무꾼: 원목, 농부: 작물 수확, 사냥꾼: 몬스터 처치, 어부: 낚시). 의뢰 게시판에서는 플레이어가 직접 일자리를 만들고 다른 사람이 납품해 돈을 법니다."
+  }
  }
 }

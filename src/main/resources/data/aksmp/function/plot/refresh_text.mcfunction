@@ -1,1 +1,1 @@
-$data modify entity @e[type=minecraft:text_display,tag=ak.vt,tag=ak.s$(k),limit=1] text set value {"text":"","extra":[{"text":"$(price) 코인","color":"gold"},{"text":"\n×$(cnt) · 재고 $(n)칸","color":"gray"}]}
+$data modify entity @e[type=minecraft:text_display,tag=ak.vt,tag=ak.s$(k),limit=1] text set value {"text":"","extra":[{"translate":"aksmp.t.6db5495d","fallback":"$(price) 코인","with":[{"text":"$(price)"}],"color":"gold"},{"translate":"aksmp.t.bb52e68d","fallback":"\n×$(cnt) · 재고 $(n)칸","with":[{"text":"$(cnt)"},{"text":"$(n)"}],"color":"gray"}]}

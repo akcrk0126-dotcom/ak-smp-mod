@@ -9,5 +9,5 @@ $data modify storage aksmp:tmp item set value {id:"$(item)",count:1}
 $data modify storage aksmp:tmp m set value {id:$(owner)}
 function aksmp:job/mail_loop
 function aksmp:mail/notify with storage aksmp:tmp m
-tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"납품 완료! +","color":"green"},{"score":{"name":"#pay","objective":"ak.tmp"},"color":"yellow"},{"text":" 코인","color":"green"}]
+tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.421a9800","fallback":"납품 완료! +","color":"green"},{"score":{"name":"#pay","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.488f6160","fallback":" 코인","color":"green"}]
 function aksmp:job/board

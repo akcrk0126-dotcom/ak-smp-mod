@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "격투장",
+  "translate": "aksmp.t.ca86d439",
+  "fallback": "격투장",
   "color": "gold",
   "bold": true
  },
  "columns": 2,
  "actions": [
   {
-   "label": "1 vs 1 신청",
+   "label": {
+    "translate": "aksmp.t.f6df9ef3",
+    "fallback": "1 vs 1 신청"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -16,7 +20,10 @@
    }
   },
   {
-   "label": "2 vs 2 신청",
+   "label": {
+    "translate": "aksmp.t.c59af5de",
+    "fallback": "2 vs 2 신청"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -24,7 +31,10 @@
    }
   },
   {
-   "label": "3 vs 3 신청",
+   "label": {
+    "translate": "aksmp.t.d4a62cc5",
+    "fallback": "3 vs 3 신청"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -32,7 +42,10 @@
    }
   },
   {
-   "label": "대기 취소",
+   "label": {
+    "translate": "aksmp.t.fcaee685",
+    "fallback": "대기 취소"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -40,7 +53,10 @@
    }
   },
   {
-   "label": "관중석으로 이동",
+   "label": {
+    "translate": "aksmp.t.fb326ba7",
+    "fallback": "관중석으로 이동"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -48,50 +64,80 @@
    }
   },
   {
-   "label": "토너먼트 참가/취소",
+   "label": {
+    "translate": "aksmp.t.111c69a3",
+    "fallback": "토너먼트 참가/취소"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
     "command": "trigger tour"
    },
-   "tooltip": "참가비 100 코인"
+   "tooltip": {
+    "translate": "aksmp.t.995ab2a6",
+    "fallback": "참가비 100 코인"
+   }
   },
   {
-   "label": "토너먼트 개최 (1v1)",
+   "label": {
+    "translate": "aksmp.t.f01e0057",
+    "fallback": "토너먼트 개최 (1v1)"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
     "command": "trigger tourhost set 1"
    },
-   "tooltip": "개최비 500 코인"
+   "tooltip": {
+    "translate": "aksmp.t.9e86bc8a",
+    "fallback": "개최비 500 코인"
+   }
   },
   {
-   "label": "토너먼트 개최 (2v2)",
+   "label": {
+    "translate": "aksmp.t.c986fc7a",
+    "fallback": "토너먼트 개최 (2v2)"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
     "command": "trigger tourhost set 2"
    },
-   "tooltip": "개최비 500 코인"
+   "tooltip": {
+    "translate": "aksmp.t.9e86bc8a",
+    "fallback": "개최비 500 코인"
+   }
   },
   {
-   "label": "토너먼트 개최 (3v3)",
+   "label": {
+    "translate": "aksmp.t.6821aa5e",
+    "fallback": "토너먼트 개최 (3v3)"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
     "command": "trigger tourhost set 3"
    },
-   "tooltip": "개최비 500 코인"
+   "tooltip": {
+    "translate": "aksmp.t.9e86bc8a",
+    "fallback": "개최비 500 코인"
+   }
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "허브에서만 신청할 수 있습니다. 인원이 모이면 3·2·1 카운트다운 후 시작! 경기 중 죽어도 아이템은 유지됩니다."
+  "contents": {
+   "translate": "aksmp.t.95657547",
+   "fallback": "허브에서만 신청할 수 있습니다. 인원이 모이면 3·2·1 카운트다운 후 시작! 경기 중 죽어도 아이템은 유지됩니다."
+  }
  }
 }

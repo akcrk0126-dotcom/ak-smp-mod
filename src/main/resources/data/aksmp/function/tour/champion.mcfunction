@@ -8,8 +8,8 @@ scoreboard players operation #champ ak.arena = #tid ak.arena
 scoreboard players operation @a[tag=ak.tin] ak.champid = #tid ak.arena
 title @a times 5 80 20
 title @a subtitle {"selector":"@a[tag=ak.tin]","color":"yellow"}
-title @a title {"text":"토너먼트 우승!","color":"gold","bold":true}
-tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"토너먼트 우승: ","color":"gold"},{"selector":"@a[tag=ak.tin]","color":"yellow"},{"text":" — 1인당 상금 "},{"score":{"name":"#share","objective":"ak.tmp"},"color":"yellow"},{"text":" 코인!"}]
+title @a title {"translate":"aksmp.t.72c6a40c","fallback":"토너먼트 우승!","color":"gold","bold":true}
+tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.499e8e50","fallback":"토너먼트 우승: ","color":"gold"},{"selector":"@a[tag=ak.tin]","color":"yellow"},{"translate":"aksmp.t.eb7ced06","fallback":" — 1인당 상금 "},{"score":{"name":"#share","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.d39111ea","fallback":" 코인!"}]
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1
 function aksmp:fx/fireworks
 tag @a remove ak.tin

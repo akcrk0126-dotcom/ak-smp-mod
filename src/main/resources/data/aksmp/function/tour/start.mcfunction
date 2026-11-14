@@ -10,4 +10,4 @@ execute as @a[tag=ak.tin,scores={ak.tteam=0}] run function aksmp:tour/unjoin
 scoreboard players set #tour ak.arena 2
 scoreboard players set #round ak.arena 1
 scoreboard players set #tgap ak.arena 5
-tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"토너먼트 시작! 총 ","color":"gold"},{"score":{"name":"#tn","objective":"ak.tmp"},"color":"yellow"},{"text":"팀, 상금 ","color":"gold"},{"score":{"name":"#pool","objective":"ak.arena"},"color":"yellow"},{"text":" 코인. 라운드 1 대진을 추첨합니다...","color":"gold"}]
+tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.17f48660","fallback":"토너먼트 시작! 총 ","color":"gold"},{"score":{"name":"#tn","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.c1bb7699","fallback":"팀, 상금 ","color":"gold"},{"score":{"name":"#pool","objective":"ak.arena"},"color":"yellow"},{"translate":"aksmp.t.853d3ae1","fallback":" 코인. 라운드 1 대진을 추첨합니다...","color":"gold"}]

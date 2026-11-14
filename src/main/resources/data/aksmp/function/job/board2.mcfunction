@@ -1,1 +1,1 @@
-$data modify entity @e[type=minecraft:text_display,tag=ak.jobtext,limit=1] text set value {"text":"","extra":[{"text":"등록된 의뢰 $(n)건\n","color":"yellow"},{"text":"우클릭: 목록 보기 · 납품 · 새 의뢰 등록","color":"white"}]}
+$data modify entity @e[type=minecraft:text_display,tag=ak.jobtext,limit=1] text set value {"text":"","extra":[{"translate":"aksmp.t.7a4ffca5","fallback":"등록된 의뢰 $(n)건\n","with":[{"text":"$(n)"}],"color":"yellow"},{"translate":"aksmp.t.3750e097","fallback":"우클릭: 목록 보기 · 납품 · 새 의뢰 등록","color":"white"}]}

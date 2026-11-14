@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "땅 구매 · 보호",
+  "translate": "aksmp.t.44677a8d",
+  "fallback": "땅 구매 · 보호",
   "color": "gold",
   "bold": true
  },
  "columns": 2,
  "actions": [
   {
-   "label": "여기 땅 사기",
+   "label": {
+    "translate": "aksmp.t.f68221cb",
+    "fallback": "여기 땅 사기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -16,7 +20,10 @@
    }
   },
   {
-   "label": "경계 보기",
+   "label": {
+    "translate": "aksmp.t.24617a4c",
+    "fallback": "경계 보기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -24,16 +31,25 @@
    }
   },
   {
-   "label": "출입 금지 켜기/끄기",
+   "label": {
+    "translate": "aksmp.t.17d5342a",
+    "fallback": "출입 금지 켜기/끄기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
     "command": "trigger claimlock"
    },
-   "tooltip": "내 땅 안에서 사용"
+   "tooltip": {
+    "translate": "aksmp.t.6cf2356f",
+    "fallback": "내 땅 안에서 사용"
+   }
   },
   {
-   "label": "동료 추가",
+   "label": {
+    "translate": "aksmp.t.4e04f0de",
+    "fallback": "동료 추가"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -41,7 +57,10 @@
    }
   },
   {
-   "label": "동료 빼기",
+   "label": {
+    "translate": "aksmp.t.5ad76ac2",
+    "fallback": "동료 빼기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -49,23 +68,35 @@
    }
   },
   {
-   "label": "이 땅 반납",
+   "label": {
+    "translate": "aksmp.t.da0b31d1",
+    "fallback": "이 땅 반납"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
     "command": "trigger unclaim"
    },
-   "tooltip": "내 땅 안에서 사용 · 2500 코인 환불"
+   "tooltip": {
+    "translate": "aksmp.t.a414aa38",
+    "fallback": "내 땅 안에서 사용 · 2500 코인 환불"
+   }
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "지금 서 있는 곳을 중심으로 33×33칸(높이 전체)이 내 땅이 됩니다. 다른 사람은 그 안에서 블록을 부수거나 놓을 수 없고, 크리퍼는 사라집니다. 상자까지 지키려면 출입 금지를 켜세요. 가격은 첫 땅 5000, 두 번째 10000, 세 번째 15000 코인이며 스폰 허브에서 250칸 이상 떨어진 오버월드에서만 살 수 있습니다."
+  "contents": {
+   "translate": "aksmp.t.ce114e86",
+   "fallback": "지금 서 있는 곳을 중심으로 33×33칸(높이 전체)이 내 땅이 됩니다. 다른 사람은 그 안에서 블록을 부수거나 놓을 수 없고, 크리퍼는 사라집니다. 상자까지 지키려면 출입 금지를 켜세요. 가격은 첫 땅 5000, 두 번째 10000, 세 번째 15000 코인이며 스폰 허브에서 250칸 이상 떨어진 오버월드에서만 살 수 있습니다."
+  }
  }
 }

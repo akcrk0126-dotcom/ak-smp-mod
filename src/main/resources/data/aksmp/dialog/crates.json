@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "상자 상점",
+  "translate": "aksmp.t.690068cd",
+  "fallback": "상자 상점",
   "color": "gold",
   "bold": true
  },
  "columns": 1,
  "actions": [
   {
-   "label": "일반 상자 — 500 코인",
+   "label": {
+    "translate": "aksmp.t.cd607a12",
+    "fallback": "일반 상자 — 500 코인"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -16,7 +20,10 @@
    }
   },
   {
-   "label": "희귀 상자 — 2500 코인",
+   "label": {
+    "translate": "aksmp.t.fdc8780b",
+    "fallback": "희귀 상자 — 2500 코인"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -24,7 +31,10 @@
    }
   },
   {
-   "label": "영웅 상자 — 10000 코인",
+   "label": {
+    "translate": "aksmp.t.cf6c254c",
+    "fallback": "영웅 상자 — 10000 코인"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -32,7 +42,10 @@
    }
   },
   {
-   "label": "전설 상자 — 40000 코인",
+   "label": {
+    "translate": "aksmp.t.9c44dce9",
+    "fallback": "전설 상자 — 40000 코인"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -40,7 +53,10 @@
    }
   },
   {
-   "label": "신화 상자 — 150000 코인",
+   "label": {
+    "translate": "aksmp.t.8fb820b8",
+    "fallback": "신화 상자 — 150000 코인"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -48,7 +64,10 @@
    }
   },
   {
-   "label": "손에 든 상자 열기",
+   "label": {
+    "translate": "aksmp.t.3804b663",
+    "fallback": "손에 든 상자 열기"
+   },
    "width": 200,
    "action": {
     "type": "minecraft:run_command",
@@ -57,13 +76,19 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "등급이 높을수록 비싸고 보상이 좋습니다. 산 상자는 손에 들고 우클릭하면 열립니다. 낮은 확률로 한 등급 위 상자가 나오고, 신화 상자에서는 0.1% 확률로 갓 엠페러 장비가 나옵니다."
+  "contents": {
+   "translate": "aksmp.t.1210245e",
+   "fallback": "등급이 높을수록 비싸고 보상이 좋습니다. 산 상자는 손에 들고 우클릭하면 열립니다. 낮은 확률로 한 등급 위 상자가 나오고, 신화 상자에서는 0.1% 확률로 갓 엠페러 장비가 나옵니다."
+  }
  }
 }

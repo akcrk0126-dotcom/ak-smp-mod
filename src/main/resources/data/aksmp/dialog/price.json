@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "진열 가격 설정",
+  "translate": "aksmp.t.d7436535",
+  "fallback": "진열 가격 설정",
   "color": "gold",
   "bold": true
  },
  "columns": 1,
  "actions": [
   {
-   "label": "확인",
+   "label": {
+    "translate": "aksmp.t.ec3d1b25",
+    "fallback": "확인"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:dynamic/run_command",
@@ -17,20 +21,29 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "내 상점 진열대에 올릴 물건의 가격을 정합니다. 그 다음 물건을 들고 진열대를 우클릭!"
+  "contents": {
+   "translate": "aksmp.t.1d38ddf2",
+   "fallback": "내 상점 진열대에 올릴 물건의 가격을 정합니다. 그 다음 물건을 들고 진열대를 우클릭!"
+  }
  },
  "inputs": [
   {
    "type": "minecraft:text",
    "key": "v",
-   "label": "가격 (코인)",
+   "label": {
+    "translate": "aksmp.t.2dde979f",
+    "fallback": "가격 (코인)"
+   },
    "initial": "100",
    "max_length": 9
   }

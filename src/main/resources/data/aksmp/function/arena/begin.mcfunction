@@ -19,11 +19,11 @@ scoreboard players set #state ak.arena 1
 scoreboard players set #timer ak.arena 100
 gamerule keep_inventory true
 gamerule immediate_respawn true
-bossbar set aksmp:match name {"text":"격투 준비 중...","color":"yellow"}
+bossbar set aksmp:match name {"translate":"aksmp.t.7976c9e6","fallback":"격투 준비 중...","color":"yellow"}
 bossbar set aksmp:match value 300
 bossbar set aksmp:match players @a[tag=ak.hub]
 bossbar set aksmp:match visible true
 title @a times 0 25 5
 title @a[tag=ak.inmatch] subtitle [{"selector":"@a[tag=ak.red]","color":"red"},{"text":" vs ","color":"white"},{"selector":"@a[tag=ak.blue]","color":"blue"}]
-title @a[tag=ak.inmatch] title {"text":"준비!","color":"yellow","bold":true}
-tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"격투장 ","color":"gold"},{"score":{"name":"#mode","objective":"ak.arena"},"color":"yellow"},{"text":" vs "},{"score":{"name":"#mode","objective":"ak.arena"},"color":"yellow"},{"text":" 매치: "},{"selector":"@a[tag=ak.red]","color":"red"},{"text":" vs "},{"selector":"@a[tag=ak.blue]","color":"blue"},{"text":" — 곧 시작합니다!"}]
+title @a[tag=ak.inmatch] title {"translate":"aksmp.t.b270bec0","fallback":"준비!","color":"yellow","bold":true}
+tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.b6a3c199","fallback":"격투장 ","color":"gold"},{"score":{"name":"#mode","objective":"ak.arena"},"color":"yellow"},{"text":" vs "},{"score":{"name":"#mode","objective":"ak.arena"},"color":"yellow"},{"translate":"aksmp.t.da5a2d15","fallback":" 매치: "},{"selector":"@a[tag=ak.red]","color":"red"},{"text":" vs "},{"selector":"@a[tag=ak.blue]","color":"blue"},{"translate":"aksmp.t.4d84c228","fallback":" — 곧 시작합니다!"}]

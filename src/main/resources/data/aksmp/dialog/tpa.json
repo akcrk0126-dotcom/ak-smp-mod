@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "텔레포트 요청",
+  "translate": "aksmp.t.2cc38a98",
+  "fallback": "텔레포트 요청",
   "color": "gold",
   "bold": true
  },
  "columns": 1,
  "actions": [
   {
-   "label": "확인",
+   "label": {
+    "translate": "aksmp.t.ec3d1b25",
+    "fallback": "확인"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:dynamic/run_command",
@@ -17,20 +21,29 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "이동하고 싶은 상대의 ID를 입력하세요."
+  "contents": {
+   "translate": "aksmp.t.563ccc0d",
+   "fallback": "이동하고 싶은 상대의 ID를 입력하세요."
+  }
  },
  "inputs": [
   {
    "type": "minecraft:text",
    "key": "v",
-   "label": "상대 ID",
+   "label": {
+    "translate": "aksmp.t.445532e2",
+    "fallback": "상대 ID"
+   },
    "initial": "1",
    "max_length": 9
   }

@@ -13,5 +13,5 @@ tag @a[tag=ak.blue] add ak.inmatch
 scoreboard players operation @a[tag=ak.inmatch] ak.tplayed = #round ak.arena
 scoreboard players operation #mode ak.arena = #tmode ak.arena
 scoreboard players set #tgap ak.arena 5
-tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"토너먼트 라운드 ","color":"gold"},{"score":{"name":"#round","objective":"ak.arena"},"color":"yellow"},{"text":": "},{"selector":"@a[tag=ak.red]","color":"red"},{"text":" vs "},{"selector":"@a[tag=ak.blue]","color":"blue"}]
+tellraw @a [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.645c76ac","fallback":"토너먼트 라운드 ","color":"gold"},{"score":{"name":"#round","objective":"ak.arena"},"color":"yellow"},{"text":": "},{"selector":"@a[tag=ak.red]","color":"red"},{"text":" vs "},{"selector":"@a[tag=ak.blue]","color":"blue"}]
 function aksmp:arena/begin

@@ -1,2 +1,2 @@
-execute if score @s ak.gaint matches 1.. run return run title @s actionbar [{"text":"직업 수입 +","color":"green"},{"score":{"name":"@s","objective":"ak.gain"},"color":"yellow"},{"text":" 코인","color":"green"}]
-execute if score @s ak.q matches 1.. run title @s actionbar {"text":"매치 상대를 기다리는 중... (/trigger leave 로 취소)","color":"yellow"}
+execute if score @s ak.gaint matches 1.. run return run title @s actionbar [{"translate":"aksmp.t.07198c3e","fallback":"직업 수입 +","color":"green"},{"score":{"name":"@s","objective":"ak.gain"},"color":"yellow"},{"translate":"aksmp.t.488f6160","fallback":" 코인","color":"green"}]
+execute if score @s ak.q matches 1.. run title @s actionbar {"translate":"aksmp.t.07aa9c82","fallback":"매치 상대를 기다리는 중... (/trigger leave 로 취소)","color":"yellow"}

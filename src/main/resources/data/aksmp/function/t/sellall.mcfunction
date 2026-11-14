@@ -59,6 +59,6 @@ function aksmp:sell/one {item:"minecraft:jungle_log",price:2}
 function aksmp:sell/one {item:"minecraft:obsidian",price:10}
 function aksmp:sell/one {item:"minecraft:cooked_beef",price:6}
 function aksmp:sell/one {item:"minecraft:bread",price:5}
-execute if score #n ak.tmp matches 0 run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"text":"팔 수 있는 아이템이 없습니다.","color":"red"}]
+execute if score #n ak.tmp matches 0 run return run tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"translate":"aksmp.t.170ac58c","fallback":"팔 수 있는 아이템이 없습니다.","color":"red"}]
 scoreboard players operation @s ak.money += #sum ak.tmp
-tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"score":{"name":"#n","objective":"ak.tmp"},"color":"yellow"},{"text":"개 판매 → +","color":"green"},{"score":{"name":"#sum","objective":"ak.tmp"},"color":"yellow"},{"text":" 코인","color":"green"}]
+tellraw @s [{"text":"","extra":[{"text":"[","color":"dark_gray"},{"text":"AK","color":"gold","bold":true},{"text":"] ","color":"dark_gray"}]},{"score":{"name":"#n","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.189e2b4d","fallback":"개 판매 → +","color":"green"},{"score":{"name":"#sum","objective":"ak.tmp"},"color":"yellow"},{"translate":"aksmp.t.488f6160","fallback":" 코인","color":"green"}]

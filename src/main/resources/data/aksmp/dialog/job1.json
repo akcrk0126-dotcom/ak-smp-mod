@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "의뢰 등록 (1/2)",
+  "translate": "aksmp.t.538e2b5f",
+  "fallback": "의뢰 등록 (1/2)",
   "color": "gold",
   "bold": true
  },
  "columns": 1,
  "actions": [
   {
-   "label": "확인",
+   "label": {
+    "translate": "aksmp.t.ec3d1b25",
+    "fallback": "확인"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:dynamic/run_command",
@@ -17,20 +21,29 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
  "after_action": "close",
  "body": {
   "type": "minecraft:plain_message",
-  "contents": "구하려는 아이템을 손에 들고, 필요한 수량을 입력하세요."
+  "contents": {
+   "translate": "aksmp.t.ade249fd",
+   "fallback": "구하려는 아이템을 손에 들고, 필요한 수량을 입력하세요."
+  }
  },
  "inputs": [
   {
    "type": "minecraft:text",
    "key": "v",
-   "label": "수량",
+   "label": {
+    "translate": "aksmp.t.ee2cda52",
+    "fallback": "수량"
+   },
    "initial": "16",
    "max_length": 9
   }

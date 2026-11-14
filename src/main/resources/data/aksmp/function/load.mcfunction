@@ -31,8 +31,8 @@ scoreboard objectives add ak.tpafrom dummy
 scoreboard objectives add ak.tpat dummy
 scoreboard objectives add ak.payto dummy
 scoreboard objectives add ak.bto dummy
-scoreboard objectives add ak.money dummy {"text":"AK SMP · 코인","color":"gold","bold":true}
-scoreboard objectives add ak.wins dummy {"text":"격투 승리","color":"red"}
+scoreboard objectives add ak.money dummy {"translate":"aksmp.t.0748f05e","fallback":"AK SMP · 코인","color":"gold","bold":true}
+scoreboard objectives add ak.wins dummy {"translate":"aksmp.t.dcb9caa5","fallback":"격투 승리","color":"red"}
 scoreboard players set #ld ak.cfg 31
 scoreboard objectives add ak.death deathCount
 scoreboard objectives add ak.kills playerKillCount
@@ -253,9 +253,9 @@ scoreboard players set #ld ak.cfg 223
 team add akblue {"text":"BLUE","color":"blue"}
 team modify akblue color blue
 team modify akblue friendlyFire false
-team add akchamp {"text":"챔피언","color":"gold"}
-team modify akchamp prefix {"text":"[챔피언] ","color":"gold"}
-bossbar add aksmp:auction {"text":"경매"}
+team add akchamp {"translate":"aksmp.t.a071a50f","fallback":"챔피언","color":"gold"}
+team modify akchamp prefix {"translate":"aksmp.t.093d7376","fallback":"[챔피언] ","color":"gold"}
+bossbar add aksmp:auction {"translate":"aksmp.t.164826ea","fallback":"경매"}
 bossbar set aksmp:auction color yellow
 bossbar set aksmp:auction max 60
 scoreboard players set #ld ak.cfg 231
@@ -263,42 +263,42 @@ execute unless score #on ak.auc matches 1 run bossbar set aksmp:auction visible 
 scoreboard objectives setdisplay below_name ak.hp
 execute if score #built ak.cfg matches 1 unless score #hubver ak.cfg matches 1.. run scoreboard players set #hubver ak.cfg 2
 execute if score #built ak.cfg matches 1 unless score #entver ak.cfg matches 439573920 run function aksmp:build/ents_start
-scoreboard objectives modify ak.money displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · 코인 랭킹","color":"yellow","bold":false}]
+scoreboard objectives modify ak.money displayname [{"text":"AK SMP","color":"gold","bold":true},{"translate":"aksmp.t.1aaafa0e","fallback":" · 코인 랭킹","color":"yellow","bold":false}]
 scoreboard objectives modify ak.money numberformat styled {"color":"yellow"}
-scoreboard objectives modify ak.kills displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · PvP 킬 랭킹","color":"yellow","bold":false}]
+scoreboard objectives modify ak.kills displayname [{"text":"AK SMP","color":"gold","bold":true},{"translate":"aksmp.t.59e9fee8","fallback":" · PvP 킬 랭킹","color":"yellow","bold":false}]
 scoreboard objectives modify ak.kills numberformat styled {"color":"red"}
 scoreboard players set #ld ak.cfg 239
-scoreboard objectives modify ak.wins displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · 격투장 승리 랭킹","color":"yellow","bold":false}]
+scoreboard objectives modify ak.wins displayname [{"text":"AK SMP","color":"gold","bold":true},{"translate":"aksmp.t.d979a45a","fallback":" · 격투장 승리 랭킹","color":"yellow","bold":false}]
 scoreboard objectives modify ak.wins numberformat styled {"color":"aqua"}
-scoreboard objectives modify ak.lv displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · 레벨 랭킹","color":"yellow","bold":false}]
+scoreboard objectives modify ak.lv displayname [{"text":"AK SMP","color":"gold","bold":true},{"translate":"aksmp.t.92ad2168","fallback":" · 레벨 랭킹","color":"yellow","bold":false}]
 scoreboard objectives modify ak.lv numberformat styled {"color":"green"}
-scoreboard objectives modify ak.beststreak displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · 최고 연속 킬","color":"yellow","bold":false}]
+scoreboard objectives modify ak.beststreak displayname [{"text":"AK SMP","color":"gold","bold":true},{"translate":"aksmp.t.c0cd10f2","fallback":" · 최고 연속 킬","color":"yellow","bold":false}]
 scoreboard objectives modify ak.beststreak numberformat styled {"color":"light_purple"}
 scoreboard objectives setdisplay list ak.lv
-bossbar add aksmp:match {"text":"격투"}
+bossbar add aksmp:match {"translate":"aksmp.t.d1792acf","fallback":"격투"}
 scoreboard players set #ld ak.cfg 247
 bossbar set aksmp:match color red
 bossbar set aksmp:match max 300
 execute unless score #state ak.arena matches 1.. run bossbar set aksmp:match visible false
 team add akt0
-team modify akt0 prefix {"text":"[루키] ","color":"gray"}
+team modify akt0 prefix {"translate":"aksmp.t.36a623f1","fallback":"[루키] ","color":"gray"}
 team modify akt0 seeFriendlyInvisibles false
 team add akt1
-team modify akt1 prefix {"text":"[브론즈] ","color":"#CD7F32"}
+team modify akt1 prefix {"translate":"aksmp.t.576bf1f5","fallback":"[브론즈] ","color":"#CD7F32"}
 scoreboard players set #ld ak.cfg 255
 team modify akt1 seeFriendlyInvisibles false
 team add akt2
-team modify akt2 prefix {"text":"[실버] ","color":"#C0C0C0"}
+team modify akt2 prefix {"translate":"aksmp.t.f0d5d689","fallback":"[실버] ","color":"#C0C0C0"}
 team modify akt2 seeFriendlyInvisibles false
 team add akt3
-team modify akt3 prefix {"text":"[골드] ","color":"gold"}
+team modify akt3 prefix {"translate":"aksmp.t.d04fced3","fallback":"[골드] ","color":"gold"}
 team modify akt3 seeFriendlyInvisibles false
 team add akt4
 scoreboard players set #ld ak.cfg 263
-team modify akt4 prefix {"text":"[다이아] ","color":"aqua"}
+team modify akt4 prefix {"translate":"aksmp.t.fb43c0ec","fallback":"[다이아] ","color":"aqua"}
 team modify akt4 seeFriendlyInvisibles false
 team add akt5
-team modify akt5 prefix {"text":"[마스터] ","color":"light_purple"}
+team modify akt5 prefix {"translate":"aksmp.t.9defa6d8","fallback":"[마스터] ","color":"light_purple"}
 team modify akt5 seeFriendlyInvisibles false
 function aksmp:ui/panel_setup
 execute unless score #built ak.cfg matches 1 run function aksmp:build/start

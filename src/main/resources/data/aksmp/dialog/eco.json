@@ -1,14 +1,18 @@
 {
  "type": "minecraft:multi_action",
  "title": {
-  "text": "판매 · 경제",
+  "translate": "aksmp.t.650046b0",
+  "fallback": "판매 · 경제",
   "color": "gold",
   "bold": true
  },
  "columns": 2,
  "actions": [
   {
-   "label": "손에 든 종류 판매",
+   "label": {
+    "translate": "aksmp.t.b36af13e",
+    "fallback": "손에 든 종류 판매"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -16,7 +20,10 @@
    }
   },
   {
-   "label": "인벤토리 전부 판매",
+   "label": {
+    "translate": "aksmp.t.e4d46e64",
+    "fallback": "인벤토리 전부 판매"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -24,7 +31,10 @@
    }
   },
   {
-   "label": "매입 시세표",
+   "label": {
+    "translate": "aksmp.t.16c62f1a",
+    "fallback": "매입 시세표"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -32,7 +42,10 @@
    }
   },
   {
-   "label": "잔액 확인",
+   "label": {
+    "translate": "aksmp.t.8e0e5d62",
+    "fallback": "잔액 확인"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -40,7 +53,10 @@
    }
   },
   {
-   "label": "송금",
+   "label": {
+    "translate": "aksmp.t.703f3bdc",
+    "fallback": "송금"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -48,7 +64,10 @@
    }
   },
   {
-   "label": "현상금 걸기",
+   "label": {
+    "translate": "aksmp.t.d7425eb9",
+    "fallback": "현상금 걸기"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -56,7 +75,10 @@
    }
   },
   {
-   "label": "경매 시작",
+   "label": {
+    "translate": "aksmp.t.a111cbbf",
+    "fallback": "경매 시작"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -64,7 +86,10 @@
    }
   },
   {
-   "label": "경매 입찰",
+   "label": {
+    "translate": "aksmp.t.636ed22a",
+    "fallback": "경매 입찰"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -72,7 +97,10 @@
    }
   },
   {
-   "label": "접속자 · ID 목록",
+   "label": {
+    "translate": "aksmp.t.1e51a9ca",
+    "fallback": "접속자 · ID 목록"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:run_command",
@@ -80,7 +108,10 @@
    }
   },
   {
-   "label": "텔레포트 요청",
+   "label": {
+    "translate": "aksmp.t.2cc38a98",
+    "fallback": "텔레포트 요청"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -88,7 +119,10 @@
    }
   },
   {
-   "label": "진열 가격 설정",
+   "label": {
+    "translate": "aksmp.t.d7436535",
+    "fallback": "진열 가격 설정"
+   },
    "width": 150,
    "action": {
     "type": "minecraft:show_dialog",
@@ -97,7 +131,10 @@
   }
  ],
  "exit_action": {
-  "label": "닫기",
+  "label": {
+   "translate": "aksmp.t.d215972f",
+   "fallback": "닫기"
+  },
   "width": 150
  },
  "can_close_with_escape": true,
