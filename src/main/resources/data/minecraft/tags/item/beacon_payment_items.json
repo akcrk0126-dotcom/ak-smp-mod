@@ -1,7 +1,6 @@
 {
  "replace": false,
  "values": [
-  "aksmp:argonite_ingot",
-  "aksmp:etherite_ingot"
+  "aksmp:argonite_ingot"
  ]
 }

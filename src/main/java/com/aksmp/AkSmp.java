@@ -65,8 +65,8 @@ public class AkSmp implements ModInitializer {
 		block("deepslate_argonite_ore", BlockBehaviour.Properties.of().strength(4.5F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE), Rarity.RARE);
 		block("argonite_ore", BlockBehaviour.Properties.of().strength(3.0F, 3.0F).requiresCorrectToolForDrops().sound(SoundType.STONE), Rarity.RARE);
 		block("argonite_block", BlockBehaviour.Properties.of().strength(5.0F, 6.0F).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK), Rarity.RARE);
-		block("etherite_ore", BlockBehaviour.Properties.of().strength(6.0F, 9.0F).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).lightLevel(s -> 7), Rarity.EPIC);
-		block("etherite_block", BlockBehaviour.Properties.of().strength(8.0F, 1200.0F).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).lightLevel(s -> 10), Rarity.EPIC);
+		// (etherite removed) block("etherite_ore", BlockBehaviour.Properties.of().strength(6.0F, 9.0F).requiresCorrectToolForDrops().sound(SoundType.AMETHYST).lightLevel(s -> 7), Rarity.EPIC);
+		// (etherite removed) block("etherite_block", BlockBehaviour.Properties.of().strength(8.0F, 1200.0F).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK).lightLevel(s -> 10), Rarity.EPIC);
 		ArmorMaterial m_argonite = material(37, 4, 9, 7, 4, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 4.00F, 0.15F, REPAIRS_ARGONITE, "argonite");
 		item("argonite_helmet", Item::new, tagged(new Item.Properties().humanoidArmor(m_argonite, ArmorType.HELMET).rarity(Rarity.RARE).durability(520).fireResistant().component(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.builder()
 				.add(Attributes.ARMOR, new AttributeModifier(id("argonite.head.armor"), 4.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
@@ -233,39 +233,6 @@ public class AkSmp implements ModInitializer {
 				.add(Attributes.SAFE_FALL_DISTANCE, new AttributeModifier(id("storm.feet.safe_fall_distance"), 3.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
 				.add(Attributes.MOVEMENT_SPEED, new AttributeModifier(id("storm.feet.movement_speed"), 0.03, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), EquipmentSlotGroup.FEET)
 				.build()), "storm_boots", "storm"));
-		ArmorMaterial m_etherite = material(37, 5, 10, 8, 5, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 5.00F, 0.20F, REPAIRS_ETHERITE, "etherite");
-		item("etherite_helmet", Item::new, tagged(new Item.Properties().humanoidArmor(m_etherite, ArmorType.HELMET).rarity(Rarity.EPIC).durability(740).fireResistant().component(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.builder()
-				.add(Attributes.ARMOR, new AttributeModifier(id("etherite.head.armor"), 5.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
-				.add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(id("etherite.head.tough"), 5.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
-				.add(Attributes.KNOCKBACK_RESISTANCE, new AttributeModifier(id("etherite.head.kb"), 0.2, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
-				.add(Attributes.MAX_HEALTH, new AttributeModifier(id("etherite.head.max_health"), 2.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
-				.add(Attributes.ATTACK_DAMAGE, new AttributeModifier(id("etherite.head.attack_damage"), 0.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.HEAD)
-				.add(Attributes.MOVEMENT_SPEED, new AttributeModifier(id("etherite.head.movement_speed"), 0.02, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), EquipmentSlotGroup.HEAD)
-				.build()), "etherite_helmet", "etherite"));
-		item("etherite_chestplate", Item::new, tagged(new Item.Properties().humanoidArmor(m_etherite, ArmorType.CHESTPLATE).rarity(Rarity.EPIC).durability(1080).fireResistant().component(DataComponents.GLIDER, Unit.INSTANCE).component(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.builder()
-				.add(Attributes.ARMOR, new AttributeModifier(id("etherite.chest.armor"), 10.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
-				.add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(id("etherite.chest.tough"), 5.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
-				.add(Attributes.KNOCKBACK_RESISTANCE, new AttributeModifier(id("etherite.chest.kb"), 0.2, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
-				.add(Attributes.MAX_HEALTH, new AttributeModifier(id("etherite.chest.max_health"), 2.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
-				.add(Attributes.ATTACK_DAMAGE, new AttributeModifier(id("etherite.chest.attack_damage"), 0.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.CHEST)
-				.add(Attributes.MOVEMENT_SPEED, new AttributeModifier(id("etherite.chest.movement_speed"), 0.02, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), EquipmentSlotGroup.CHEST)
-				.build()), "etherite_chestplate", "etherite"));
-		item("etherite_leggings", Item::new, tagged(new Item.Properties().humanoidArmor(m_etherite, ArmorType.LEGGINGS).rarity(Rarity.EPIC).durability(1010).fireResistant().component(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.builder()
-				.add(Attributes.ARMOR, new AttributeModifier(id("etherite.legs.armor"), 8.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.LEGS)
-				.add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(id("etherite.legs.tough"), 5.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.LEGS)
-				.add(Attributes.KNOCKBACK_RESISTANCE, new AttributeModifier(id("etherite.legs.kb"), 0.2, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.LEGS)
-				.add(Attributes.MAX_HEALTH, new AttributeModifier(id("etherite.legs.max_health"), 2.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.LEGS)
-				.add(Attributes.ATTACK_DAMAGE, new AttributeModifier(id("etherite.legs.attack_damage"), 0.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.LEGS)
-				.add(Attributes.MOVEMENT_SPEED, new AttributeModifier(id("etherite.legs.movement_speed"), 0.02, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), EquipmentSlotGroup.LEGS)
-				.build()), "etherite_leggings", "etherite"));
-		item("etherite_boots", Item::new, tagged(new Item.Properties().humanoidArmor(m_etherite, ArmorType.BOOTS).rarity(Rarity.EPIC).durability(880).fireResistant().component(DataComponents.ATTRIBUTE_MODIFIERS, ItemAttributeModifiers.builder()
-				.add(Attributes.ARMOR, new AttributeModifier(id("etherite.feet.armor"), 5.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
-				.add(Attributes.ARMOR_TOUGHNESS, new AttributeModifier(id("etherite.feet.tough"), 5.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
-				.add(Attributes.KNOCKBACK_RESISTANCE, new AttributeModifier(id("etherite.feet.kb"), 0.2, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
-				.add(Attributes.MAX_HEALTH, new AttributeModifier(id("etherite.feet.max_health"), 2.0, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
-				.add(Attributes.ATTACK_DAMAGE, new AttributeModifier(id("etherite.feet.attack_damage"), 0.5, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.FEET)
-				.add(Attributes.MOVEMENT_SPEED, new AttributeModifier(id("etherite.feet.movement_speed"), 0.02, AttributeModifier.Operation.ADD_MULTIPLIED_BASE), EquipmentSlotGroup.FEET)
-				.build()), "etherite_boots", "etherite"));
 		ToolMaterial argonite = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3000, 12.0F, 5.0F, 15, REPAIRS_ARGONITE);
 		item("argonite_sword", Item::new, tagged(new Item.Properties().sword(argonite, 4.0F, -2.4F).rarity(Rarity.RARE).fireResistant(), "argonite_sword", null));
 		item("argonite_pickaxe", Item::new, tagged(new Item.Properties().pickaxe(argonite, 1.0F, -2.8F).rarity(Rarity.RARE).fireResistant(), "argonite_pickaxe", null));
@@ -274,16 +241,6 @@ public class AkSmp implements ModInitializer {
 		item("argonite_bow", BowItem::new, tagged(new Item.Properties().durability(1600).enchantable(20).repairable(REPAIRS_ARGONITE).rarity(Rarity.RARE).fireResistant(), "argonite_bow", null));
 		item("argonite_crossbow", CrossbowItem::new, tagged(new Item.Properties().durability(1800).enchantable(20).repairable(REPAIRS_ARGONITE).component(DataComponents.CHARGED_PROJECTILES, ChargedProjectiles.EMPTY).rarity(Rarity.RARE).fireResistant(), "argonite_crossbow", null));
 		item("argonite_core", Item::new, tagged(new Item.Properties().rarity(Rarity.EPIC).fireResistant(), "argonite_core", null));
-		ToolMaterial etherite = new ToolMaterial(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4500, 14.0F, 6.0F, 22, REPAIRS_ETHERITE);
-		item("etherite_sword", Item::new, tagged(new Item.Properties().sword(etherite, 5.0F, -2.2F).rarity(Rarity.EPIC).fireResistant(), "etherite_sword", null));
-		item("etherite_pickaxe", Item::new, tagged(new Item.Properties().pickaxe(etherite, 1.0F, -2.6F).rarity(Rarity.EPIC).fireResistant(), "etherite_pickaxe", null));
-		item("etherite_axe", Item::new, tagged(new Item.Properties().axe(etherite, 6.0F, -2.9F).rarity(Rarity.EPIC).fireResistant(), "etherite_axe", null));
-		item("etherite_spear", Item::new, tagged(new Item.Properties().spear(etherite, 2.8F, 0.3F, 1.4F, 1.1F, 2.0F, 1.1F, 0.15F, 0.25F, 0.45F).rarity(Rarity.EPIC).fireResistant(), "etherite_spear", null));
-		item("etherite_bow", BowItem::new, tagged(new Item.Properties().durability(3000).enchantable(25).repairable(REPAIRS_ETHERITE).rarity(Rarity.EPIC).fireResistant(), "etherite_bow", null));
-		item("etherite_crossbow", CrossbowItem::new, tagged(new Item.Properties().durability(3400).enchantable(25).repairable(REPAIRS_ETHERITE).component(DataComponents.CHARGED_PROJECTILES, ChargedProjectiles.EMPTY).rarity(Rarity.EPIC).fireResistant(), "etherite_crossbow", null));
-		item("etherite_shard", Item::new, tagged(new Item.Properties().rarity(Rarity.EPIC).fireResistant(), "etherite_shard", null));
-		item("etherite_ingot", Item::new, tagged(new Item.Properties().rarity(Rarity.EPIC).fireResistant().component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true), "etherite_ingot", null));
-		item("etherite_upgrade_smithing_template", Item::new, tagged(new Item.Properties().rarity(Rarity.EPIC).fireResistant(), "etherite_upgrade_smithing_template", null));
 		item("raw_argonite", Item::new, tagged(new Item.Properties().rarity(Rarity.RARE), "raw_argonite", null));
 		item("argonite_ingot", Item::new, tagged(new Item.Properties().rarity(Rarity.RARE).fireResistant().component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true), "argonite_ingot", null));
 		item("gacha_ticket", Item::new, tagged(new Item.Properties().rarity(Rarity.UNCOMMON).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true), "ticket", null));

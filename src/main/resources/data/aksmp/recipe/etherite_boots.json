@@ -1,9 +1,0 @@
-{
- "type": "minecraft:smithing_transform",
- "template": "aksmp:etherite_upgrade_smithing_template",
- "base": "aksmp:argonite_boots",
- "addition": "aksmp:etherite_ingot",
- "result": {
-  "id": "aksmp:etherite_boots"
- }
-}

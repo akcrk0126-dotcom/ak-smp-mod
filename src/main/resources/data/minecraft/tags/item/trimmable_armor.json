@@ -24,10 +24,6 @@
   "aksmp:storm_helmet",
   "aksmp:storm_chestplate",
   "aksmp:storm_leggings",
-  "aksmp:storm_boots",
-  "aksmp:etherite_helmet",
-  "aksmp:etherite_chestplate",
-  "aksmp:etherite_leggings",
-  "aksmp:etherite_boots"
+  "aksmp:storm_boots"
  ]
 }

@@ -155,12 +155,11 @@ scoreboard objectives add ak.s61 minecraft.killed:minecraft.ender_dragon
 scoreboard objectives add ak.s62 minecraft.killed:minecraft.wither
 scoreboard objectives add ak.s63 minecraft.custom:minecraft.fish_caught
 scoreboard objectives add ak.s64 minecraft.mined:aksmp.deepslate_argonite_ore
-scoreboard objectives add ak.s65 minecraft.mined:aksmp.etherite_ore
 scoreboard objectives add job trigger
 scoreboard objectives add gacha trigger
 scoreboard objectives add enchant trigger
-scoreboard players set #ld ak.cfg 143
 scoreboard objectives add up trigger
+scoreboard players set #ld ak.cfg 143
 scoreboard objectives add ak.streak dummy
 scoreboard objectives add ak.beststreak dummy
 scoreboard objectives add ak.gain dummy
@@ -168,8 +167,8 @@ scoreboard objectives add ak.gaint dummy
 scoreboard objectives add ak.tier dummy
 scoreboard objectives add ak.tierbest dummy
 scoreboard objectives add ak.champid dummy
-scoreboard players set #ld ak.cfg 151
 scoreboard objectives add ak.m1 dummy
+scoreboard players set #ld ak.cfg 151
 scoreboard objectives add ak.m2 dummy
 scoreboard objectives add ak.m3 dummy
 scoreboard objectives add ak.m4 dummy
@@ -177,8 +176,8 @@ scoreboard objectives add ak.lbp dummy
 scoreboard objectives add ak.xp dummy
 scoreboard objectives add ak.lv dummy
 scoreboard objectives add ak.xpn dummy
-scoreboard players set #ld ak.cfg 159
 scoreboard objectives add ak.xps dummy
+scoreboard players set #ld ak.cfg 159
 scoreboard objectives add ak.deaths deathCount
 scoreboard objectives add ak.kev playerKillCount
 scoreboard objectives add hud trigger
@@ -186,8 +185,8 @@ scoreboard objectives add rank trigger
 scoreboard objectives add ak.use minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add ak.claims dummy
 scoreboard objectives add ak.cid dummy
-scoreboard players set #ld ak.cfg 167
 scoreboard objectives add ak.showt dummy
+scoreboard players set #ld ak.cfg 167
 scoreboard objectives add ak.trust dummy
 scoreboard objectives add ak.topcd dummy
 scoreboard objectives add hub trigger
@@ -195,8 +194,8 @@ scoreboard objectives add top trigger
 scoreboard objectives add crate trigger
 scoreboard objectives add open trigger
 scoreboard objectives add claim trigger
-scoreboard players set #ld ak.cfg 175
 scoreboard objectives add unclaim trigger
+scoreboard players set #ld ak.cfg 175
 scoreboard objectives add claimlock trigger
 scoreboard objectives add claimshow trigger
 scoreboard objectives add trust trigger
@@ -204,8 +203,8 @@ scoreboard objectives add untrust trigger
 scoreboard objectives add ak.slot dummy
 scoreboard objectives add ak.pmode dummy
 scoreboard objectives add ak.psum dummy
-scoreboard players set #ld ak.cfg 183
 scoreboard objectives add ak.mig dummy
+scoreboard players set #ld ak.cfg 183
 scoreboard objectives add ak.b1 dummy {"text":"AK SMP","color":"gold","bold":true}
 scoreboard objectives add ak.b2 dummy {"text":"AK SMP","color":"gold","bold":true}
 scoreboard objectives add ak.b3 dummy {"text":"AK SMP","color":"gold","bold":true}
@@ -213,8 +212,8 @@ scoreboard objectives add ak.b4 dummy {"text":"AK SMP","color":"gold","bold":tru
 scoreboard objectives add ak.b5 dummy {"text":"AK SMP","color":"gold","bold":true}
 scoreboard objectives add ak.b6 dummy {"text":"AK SMP","color":"gold","bold":true}
 scoreboard objectives add ak.b7 dummy {"text":"AK SMP","color":"gold","bold":true}
-scoreboard players set #ld ak.cfg 191
 scoreboard objectives add ak.b8 dummy {"text":"AK SMP","color":"gold","bold":true}
+scoreboard players set #ld ak.cfg 191
 scoreboard objectives add ak.b9 dummy {"text":"AK SMP","color":"gold","bold":true}
 scoreboard objectives add ak.b10 dummy {"text":"AK SMP","color":"gold","bold":true}
 scoreboard objectives add ak.b11 dummy {"text":"AK SMP","color":"gold","bold":true}
@@ -222,87 +221,85 @@ scoreboard objectives add panel trigger
 scoreboard objectives add combine trigger
 scoreboard objectives add mkbook trigger
 scoreboard objectives add ak.argt dummy
-scoreboard players set #ld ak.cfg 199
-scoreboard objectives add ak.etht dummy
 scoreboard players set #1 ak.cfg 1
+scoreboard players set #ld ak.cfg 199
 scoreboard players set #2 ak.cfg 2
 scoreboard players set #5 ak.cfg 5
 scoreboard players set #10 ak.cfg 10
 scoreboard players set #20 ak.cfg 20
 scoreboard players set #31 ak.cfg 31
 scoreboard players set #40 ak.cfg 40
-scoreboard players set #ld ak.cfg 207
 scoreboard players set #50 ak.cfg 50
 scoreboard players set #60 ak.cfg 60
+scoreboard players set #ld ak.cfg 207
 scoreboard players set #95 ak.cfg 95
 scoreboard players set #100 ak.cfg 100
 execute unless score #claimprice ak.cfg matches 1.. run scoreboard players set #claimprice ak.cfg 5000
 execute unless score #gacha_cd ak.cfg matches 1.. run scoreboard players set #gacha_cd ak.cfg 1200
 execute unless score #reward ak.cfg matches 0.. run scoreboard players set #reward ak.cfg 150
 execute unless score #plotprice ak.cfg matches 1.. run scoreboard players set #plotprice ak.cfg 5000
-scoreboard players set #ld ak.cfg 215
 execute unless score #state ak.arena matches 0.. run scoreboard players set #state ak.arena 0
 execute unless score #tour ak.arena matches 0.. run scoreboard players set #tour ak.arena 0
+scoreboard players set #ld ak.cfg 215
 execute unless score #on ak.auc matches 0.. run scoreboard players set #on ak.auc 0
 execute unless score #next ak.id matches 0.. run scoreboard players set #next ak.id 0
 scoreboard players set #boot ak.cfg 1
 execute if score #built ak.cfg matches 1 unless data storage aksmp:cfg o.y run scoreboard players set #legacy ak.cfg 1
 execute if score #built ak.cfg matches 1 unless data storage aksmp:cfg o.y run data modify storage aksmp:cfg o set value {y:200}
 team add akred {"text":"RED","color":"red"}
-scoreboard players set #ld ak.cfg 223
 team modify akred color red
 team modify akred friendlyFire false
+scoreboard players set #ld ak.cfg 223
 team add akblue {"text":"BLUE","color":"blue"}
 team modify akblue color blue
 team modify akblue friendlyFire false
 team add akchamp {"text":"챔피언","color":"gold"}
 team modify akchamp prefix {"text":"[챔피언] ","color":"gold"}
 bossbar add aksmp:auction {"text":"경매"}
-scoreboard players set #ld ak.cfg 231
 bossbar set aksmp:auction color yellow
 bossbar set aksmp:auction max 60
+scoreboard players set #ld ak.cfg 231
 execute unless score #on ak.auc matches 1 run bossbar set aksmp:auction visible false
 scoreboard objectives setdisplay below_name ak.hp
 execute if score #built ak.cfg matches 1 unless score #hubver ak.cfg matches 1.. run scoreboard players set #hubver ak.cfg 2
 execute if score #built ak.cfg matches 1 unless score #entver ak.cfg matches 439573920 run function aksmp:build/ents_start
 scoreboard objectives modify ak.money displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · 코인 랭킹","color":"yellow","bold":false}]
 scoreboard objectives modify ak.money numberformat styled {"color":"yellow"}
-scoreboard players set #ld ak.cfg 239
 scoreboard objectives modify ak.kills displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · PvP 킬 랭킹","color":"yellow","bold":false}]
 scoreboard objectives modify ak.kills numberformat styled {"color":"red"}
+scoreboard players set #ld ak.cfg 239
 scoreboard objectives modify ak.wins displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · 격투장 승리 랭킹","color":"yellow","bold":false}]
 scoreboard objectives modify ak.wins numberformat styled {"color":"aqua"}
 scoreboard objectives modify ak.lv displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · 레벨 랭킹","color":"yellow","bold":false}]
 scoreboard objectives modify ak.lv numberformat styled {"color":"green"}
 scoreboard objectives modify ak.beststreak displayname [{"text":"AK SMP","color":"gold","bold":true},{"text":" · 최고 연속 킬","color":"yellow","bold":false}]
 scoreboard objectives modify ak.beststreak numberformat styled {"color":"light_purple"}
-scoreboard players set #ld ak.cfg 247
 scoreboard objectives setdisplay list ak.lv
 bossbar add aksmp:match {"text":"격투"}
+scoreboard players set #ld ak.cfg 247
 bossbar set aksmp:match color red
 bossbar set aksmp:match max 300
 execute unless score #state ak.arena matches 1.. run bossbar set aksmp:match visible false
 team add akt0
 team modify akt0 prefix {"text":"[루키] ","color":"gray"}
 team modify akt0 seeFriendlyInvisibles false
-scoreboard players set #ld ak.cfg 255
 team add akt1
 team modify akt1 prefix {"text":"[브론즈] ","color":"#CD7F32"}
+scoreboard players set #ld ak.cfg 255
 team modify akt1 seeFriendlyInvisibles false
 team add akt2
 team modify akt2 prefix {"text":"[실버] ","color":"#C0C0C0"}
 team modify akt2 seeFriendlyInvisibles false
 team add akt3
 team modify akt3 prefix {"text":"[골드] ","color":"gold"}
-scoreboard players set #ld ak.cfg 263
 team modify akt3 seeFriendlyInvisibles false
 team add akt4
+scoreboard players set #ld ak.cfg 263
 team modify akt4 prefix {"text":"[다이아] ","color":"aqua"}
 team modify akt4 seeFriendlyInvisibles false
 team add akt5
 team modify akt5 prefix {"text":"[마스터] ","color":"light_purple"}
 team modify akt5 seeFriendlyInvisibles false
 function aksmp:ui/panel_setup
-scoreboard players set #ld ak.cfg 271
 execute unless score #built ak.cfg matches 1 run function aksmp:build/start
 scoreboard players set #ld ak.cfg 99999
