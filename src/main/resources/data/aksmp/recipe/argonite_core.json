@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "key": {
+  "I": "aksmp:argonite_ingot",
+  "S": "minecraft:netherite_scrap",
+  "H": "minecraft:heart_of_the_sea"
+ },
+ "pattern": [
+  "ISI",
+  "SHS",
+  "ISI"
+ ],
+ "result": {
+  "id": "aksmp:argonite_core"
+ }
+}

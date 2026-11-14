@@ -39,6 +39,9 @@ say "execute if block 0 -64 0 minecraft:barrel run say BARREL_OK"
 say "setblock 0 -60 0 aksmp:deepslate_argonite_ore"
 say "execute if block 0 -60 0 aksmp:deepslate_argonite_ore run say ORE_OK"
 say "function aksmp:argonite/sec"
+say "setblock 1 -60 0 aksmp:etherite_ore"
+say "execute if block 1 -60 0 aksmp:etherite_ore run say ETHER_OK"
+say "function aksmp:etherite/sec"
 say "say SMOKE_END"
 sleep 15
 say "stop"
@@ -51,5 +54,6 @@ FAIL=0
 grep -q -E 'Failed to load function|Couldn.t load|Unknown function|Exception' server.log && { echo "::error::load errors in server.log"; FAIL=1; }
 grep -q '#built has 1 \[ak.cfg\]' server.log || { echo "::error::hub was not built"; FAIL=1; }
 grep -q 'HUB_ENTITIES_OK' server.log || { echo "::error::hub signs/NPCs missing"; FAIL=1; }
+grep -q 'ETHER_OK' server.log || { echo "::error::etherite ore block missing"; FAIL=1; }
 grep -q 'ORE_OK' server.log || { echo "::error::argonite ore block missing"; FAIL=1; }
 exit $FAIL

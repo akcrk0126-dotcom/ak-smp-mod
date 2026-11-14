@@ -1,0 +1,20 @@
+{
+ "layers": {
+  "humanoid": [
+   {
+    "texture": "aksmp:etherite"
+   }
+  ],
+  "humanoid_leggings": [
+   {
+    "texture": "aksmp:etherite"
+   }
+  ],
+  "wings": [
+   {
+    "texture": "aksmp:etherite",
+    "use_player_texture": false
+   }
+  ]
+ }
+}

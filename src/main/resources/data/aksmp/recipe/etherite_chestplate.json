@@ -1,0 +1,9 @@
+{
+ "type": "minecraft:smithing_transform",
+ "template": "aksmp:etherite_upgrade_smithing_template",
+ "base": "aksmp:argonite_chestplate",
+ "addition": "aksmp:etherite_ingot",
+ "result": {
+  "id": "aksmp:etherite_chestplate"
+ }
+}

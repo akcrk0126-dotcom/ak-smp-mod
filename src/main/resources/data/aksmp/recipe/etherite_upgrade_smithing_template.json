@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "key": {
+  "S": "aksmp:etherite_shard",
+  "T": "minecraft:netherite_upgrade_smithing_template",
+  "N": "minecraft:nether_star"
+ },
+ "pattern": [
+  "STS",
+  "SNS",
+  "SSS"
+ ],
+ "result": {
+  "id": "aksmp:etherite_upgrade_smithing_template"
+ }
+}

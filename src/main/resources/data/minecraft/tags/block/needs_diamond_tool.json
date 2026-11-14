@@ -3,6 +3,8 @@
  "values": [
   "aksmp:argonite_ore",
   "aksmp:deepslate_argonite_ore",
-  "aksmp:argonite_block"
+  "aksmp:argonite_block",
+  "aksmp:etherite_ore",
+  "aksmp:etherite_block"
  ]
 }

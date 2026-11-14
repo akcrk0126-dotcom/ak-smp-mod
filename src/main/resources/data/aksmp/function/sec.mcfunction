@@ -13,3 +13,4 @@ function aksmp:ui/sec
 effect give @a[tag=!ak.nofb] minecraft:night_vision infinite 0 true
 execute unless block 0 -64 0 minecraft:barrel run setblock 0 -64 0 minecraft:barrel
 function aksmp:argonite/sec
+function aksmp:etherite/sec

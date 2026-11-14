@@ -62,3 +62,4 @@ execute as @a[scores={ak.s61=1..}] run function aksmp:jobs/pay {o:"ak.s61",j:4,p
 execute as @a[scores={ak.s62=1..}] run function aksmp:jobs/pay {o:"ak.s62",j:4,p:1500}
 execute as @a[scores={ak.s63=1..}] run function aksmp:jobs/pay {o:"ak.s63",j:5,p:12}
 execute as @a[scores={ak.s64=1..}] run function aksmp:jobs/pay {o:"ak.s64",j:1,p:200}
+execute as @a[scores={ak.s65=1..}] run function aksmp:jobs/pay {o:"ak.s65",j:1,p:800}

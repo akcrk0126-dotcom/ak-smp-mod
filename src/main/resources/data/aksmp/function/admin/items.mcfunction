@@ -22,6 +22,10 @@ give @s aksmp:storm_helmet 1
 give @s aksmp:storm_chestplate 1
 give @s aksmp:storm_leggings 1
 give @s aksmp:storm_boots 1
+give @s aksmp:etherite_helmet 1
+give @s aksmp:etherite_chestplate 1
+give @s aksmp:etherite_leggings 1
+give @s aksmp:etherite_boots 1
 give @s aksmp:argonite_sword 1
 give @s aksmp:argonite_pickaxe 1
 give @s aksmp:argonite_axe 1
@@ -33,3 +37,16 @@ give @s aksmp:crate_epic 1
 give @s aksmp:crate_legendary 1
 give @s aksmp:crate_mythic 1
 give @s aksmp:gacha_ticket 1
+give @s aksmp:argonite_core 1
+give @s aksmp:argonite_bow 1
+give @s aksmp:argonite_crossbow 1
+give @s aksmp:argonite_spear 1
+give @s aksmp:etherite_shard 1
+give @s aksmp:etherite_ingot 1
+give @s aksmp:etherite_upgrade_smithing_template 1
+give @s aksmp:etherite_sword 1
+give @s aksmp:etherite_pickaxe 1
+give @s aksmp:etherite_axe 1
+give @s aksmp:etherite_spear 1
+give @s aksmp:etherite_bow 1
+give @s aksmp:etherite_crossbow 1
